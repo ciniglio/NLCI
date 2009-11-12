@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'qs11_10_09' target in the 'qs11_10_09' project
+//
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import <QSFoundation/QSFoundation.h>
+#import <QSCore/QSCore.h>
+#endif
+
+
+#define kqs11_10_09Type @"qs11_10_09Type"

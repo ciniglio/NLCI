@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>NL_interface</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.blacktree.Quicksilver.qs11_10_09</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>NL_interface</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleVersion</key>
+	<string>5E</string>
+	<key>QSDefaultsTemplate</key>
+	<dict>
+		<key>interface.bindingname</key>
+		<string>value</string>
+		<key>interface.bindingname2</key>
+		<string>value</string>
+	</dict>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>Alejandro Ciniglio</string>
+		<key>categories</key>
+		<array>
+			<string>Interfaces</string>
+		</array>
+		<key>description</key>
+		<string></string>
+		<key>extendedDescription</key>
+		<string></string>
+		<key>icon</key>
+		<string></string>
+		<key>qsversion</key>
+		<string>29CC</string>
+		<key>relatedBundles </key>
+		<array/>
+	</dict>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSCommandInterfaceControllers</key>
+		<dict>
+			<key>NL_interface</key>
+			<string>NL_interface</string>
+		</dict>
+		<key>QSPreferencePanesTemplate</key>
+		<dict>
+			<key>NL_interfacePrefPane</key>
+			<dict>
+				<key>class</key>
+				<string>QSPreferencePane</string>
+				<key>description</key>
+				<string>NL_interface interface preferences</string>
+				<key>icon</key>
+				<string></string>
+				<key>name</key>
+				<string>NL_interface</string>
+				<key>nibBundle</key>
+				<string>com.blacktree.Quicksilver.NL_interface</string>
+				<key>nibName</key>
+				<string>NL_interfacePrefPane</string>
+				<key>type</key>
+				<string>hidden</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>version</key>
+		<string>3779</string>
+	</dict>
+</dict>
+</plist>
