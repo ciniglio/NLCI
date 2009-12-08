@@ -9,7 +9,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <QSInterface/QSResizingInterfaceController.h>
+#import "QSInterface/QSResizingInterfaceController.h"
+
 
 @interface NL_interface : QSResizingInterfaceController
 {
@@ -18,5 +19,6 @@
 }
 - (IBAction) search1:(id)sender;
 - (IBAction) search2:(id)sender;
+- (IBAction) findActions:(id)sender;
 -(void)updateDetailsString;
 @end

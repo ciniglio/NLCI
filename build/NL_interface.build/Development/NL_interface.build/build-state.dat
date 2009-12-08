@@ -1,53 +1,53 @@
 TNL_interface
 v7
 r0
-t279754418.622077
+t281955641.639746
 cCheck dependencies
-cProcessInfoPlistFile /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/Contents/Info.plist Info.plist
-cStripNIB /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.nib
-cStripNIB /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interfacePrefPane.nib
-cProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-hdffvdpzxjhmtnbvognpeafvwdqz/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbbtupandwzdeicyvmlyfohwdpiq/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.o /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cLd /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface normal ppc
-cCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.o /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface normal i386
-cCreateUniversalBinary /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface normal "ppc i386"
-cPhaseScriptExecution "Run Script" /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh
-cTouch /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin
+cProcessInfoPlistFile /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Info.plist Info.plist
+cStripNIB /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.nib
+cStripNIB /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interfacePrefPane.nib
+cProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-ffyyhcmbnkfkgpdsfbxkzvfncfdv/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbptlfmivdzwfkesjpcxervmyxqf/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.o /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NLParser.o /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface normal ppc
+cCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.o /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NLParser.o /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface normal i386
+cPhaseScriptExecution "Run Script" /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSAction.h
-c000000004AED16E20000000000000C02
-t1257051874
-s3074
+c000000004B16E00C0000000000000CA6
+t1259790348
+s3238
 i<Foundation/Foundation.h>
 i<QSCore/QSObject.h>
 i<QSCore/QSObjectRanker.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSActionProvider.h
-c000000004AED16E20000000000000398
-t1257051874
+c000000004B16E00C0000000000000398
+t1259790348
 s920
 i<Foundation/Foundation.h>
 i"QSAction.h"
 i"QSObject.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSBasicObject.h
-c000000004AED16E2000000000000073A
-t1257051874
+c000000004B16E00C000000000000073A
+t1259790348
 s1850
 i<Cocoa/Cocoa.h>
 i<QSCore/QSObjectRanker.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSCatalogEntry.h
-c000000004AED16E20000000000000804
-t1257051874
+c000000004B16E00C0000000000000804
+t1259790348
 s2052
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSCore.h
-c000000004AED16E20000000000000309
-t1257051874
+c000000004B16E00C0000000000000309
+t1259790348
 s777
 i"QSTypes.h"
 i"QSDebug.h"
@@ -76,162 +76,168 @@ i"QSRankedObject.h"
 i"QSIconLoader.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSDebug.h
-c000000004AED16E2000000000000028E
-t1257051874
+c000000004B16E00C000000000000028E
+t1259790348
 s654
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSDefines.h
-c000000004AED16E20000000000000054
-t1257051874
+c000000004B16E00C0000000000000054
+t1259790348
 s84
 
+N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSExecutor.h
+c000000004B16E00C00000000000008F1
+t1259790348
+s2289
+i<Foundation/Foundation.h>
+
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSIconLoader.h
-c000000004AED16E20000000000000308
-t1257051874
+c000000004B16E00C0000000000000308
+t1259790348
 s776
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSInterfaceMediator.h
-c000000004AED16E200000000000001F6
-t1257051874
+c000000004B16E00C00000000000001F6
+t1259790348
 s502
 i<Cocoa/Cocoa.h>
 i"QSRegistry.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSKeys.h
-c000000004AED16E200000000000002ED
-t1257051874
+c000000004B16E00C00000000000002ED
+t1259790348
 s749
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSLibrarian.h
-c000000004AED16E20000000000001074
-t1257051874
+c000000004B16E00C0000000000001074
+t1259790348
 s4212
 i<Foundation/Foundation.h>
 i"QSCatalogEntry.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSMacros.h
-c000000004AED16E2000000000000047F
-t1257051874
+c000000004B16E00C000000000000047F
+t1259790348
 s1151
 i<AvailabilityMacros.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSNotifications.h
-c000000004AED16E200000000000003BC
-t1257051874
+c000000004B16E00C00000000000003BC
+t1259790348
 s956
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSObject.h
-c000000004AED16E20000000000001AE0
-t1257051874
+c000000004B16E00C0000000000001AE0
+t1259790348
 s6880
 i<Foundation/Foundation.h>
 i<AddressBook/AddressBook.h>
 i<QSCore/QSBasicObject.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSObjectRanker.h
-c000000004AED16E2000000000000048B
-t1257051874
+c000000004B16E00C000000000000048B
+t1259790348
 s1163
 i<Cocoa/Cocoa.h>
 i<QSCore/QSStringRanker.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSObjectSource.h
-c000000004AED16E2000000000000056E
-t1257051874
+c000000004B16E00C000000000000056E
+t1259790348
 s1390
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSObject_FileHandling.h
-c000000004AED16E200000000000005E2
-t1257051874
+c000000004B16E00C00000000000005E2
+t1259790348
 s1506
 i<Foundation/Foundation.h>
 i"QSObject.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSObject_PropertyList.h
-c000000004AED16E20000000000000289
-t1257051874
+c000000004B16E00C0000000000000289
+t1259790348
 s649
 i<Foundation/Foundation.h>
 i"QSObject.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSObject_StringHandling.h
-c000000004AED16E200000000000001DC
-t1257051874
+c000000004B16E00C00000000000001DC
+t1259790348
 s476
 i<Cocoa/Cocoa.h>
 i"QSObject.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSObject_URLHandling.h
-c000000004AED16E2000000000000018C
-t1257051874
+c000000004B16E00C000000000000018C
+t1259790348
 s396
 i<Foundation/Foundation.h>
 i"QSObject.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSParser.h
-c000000004AED16E20000000000000251
-t1257051874
+c000000004B16E00C0000000000000251
+t1259790348
 s593
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSPaths.h
-c000000004AED16E20000000000000618
-t1257051874
+c000000004B16E00C0000000000000618
+t1259790348
 s1560
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSRankedObject.h
-c000000004AED16E20000000000000314
-t1257051874
+c000000004B16E00C0000000000000314
+t1259790348
 s788
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSRegistry.h
-c000000004AED16E20000000000000CA4
-t1257051874
+c000000004B16E00C0000000000000CA4
+t1259790348
 s3236
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSResourceManager.h
-c000000004AED16E200000000000002C5
-t1257051874
+c000000004B16E00C00000000000002C5
+t1259790348
 s709
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSStringRanker.h
-c000000004AED16E20000000000000201
-t1257051874
+c000000004B16E00C0000000000000201
+t1259790348
 s513
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSTaskController.h
-c000000004AED16E20000000000000404
-t1257051874
+c000000004B16E00C0000000000000404
+t1259790348
 s1028
 i<AppKit/AppKit.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSTypes.h
-c000000004AED16E200000000000009B8
-t1257051874
+c000000004B16E00C00000000000009B8
+t1259790348
 s2488
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/QSVoyeur.h
-c000000004AED16E200000000000000D6
-t1257051874
+c000000004B16E00C00000000000000D6
+t1259790348
 s214
 i<Foundation/Foundation.h>
 i"UKKQueue.h"
 i"UKFileWatcher.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/UKFileWatcher.h
-c000000004AED16E200000000000008B1
-t1257051874
+c000000004B16E00C00000000000008B1
+t1259790348
 s2225
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/Headers/UKKQueue.h
-c000000004AED16E2000000000000112E
-t1257051874
+c000000004B16E00C000000000000112E
+t1259790348
 s4398
 i<Foundation/Foundation.h>
 i<sys/types.h>
@@ -239,326 +245,326 @@ i<sys/event.h>
 i"UKFileWatcher.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/QSCore
-c000000004AED16E200000000000E4998
-t1257051874
-s936344
+c000000004B16E00C000000000009EFEC
+t1259790348
+s651244
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework/Headers/QSWindow.h
-c000000004AED16E20000000000000844
-t1257051874
-s2116
+c000000004B16E00C000000000000088C
+t1259790348
+s2188
 i<Foundation/Foundation.h>
 i<QSFoundation/CGSPrivate.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework/QSEffects
-c000000004AED16E2000000000002A7B4
-t1257051874
-s174004
+c000000004B16E00C000000000001C1E0
+t1259790348
+s115168
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDAlias+AliasFile.h
-c000000004AED16E2000000000000165F
-t1257051874
+c000000004B16E00C000000000000165F
+t1259790348
 s5727
 i<Cocoa/Cocoa.h>
 i"NDAlias.h"
 i"NDSDKCompatibility.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDAlias+QSMods.h
-c000000004AED16E20000000000000106
-t1257051874
+c000000004B16E00C0000000000000106
+t1259790348
 s262
 i<Foundation/Foundation.h>
 i"NDAlias.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDAlias.h
-c000000004AED16E20000000000004A18
-t1257051874
+c000000004B16E00C0000000000004A18
+t1259790348
 s18968
 i<Foundation/Foundation.h>
 i"NDSDKCompatibility.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDAppleScriptObject.h
-c000000004AED16E20000000000009DFF
-t1257051874
+c000000004B16E00C0000000000009DFF
+t1259790348
 s40447
 i<Foundation/Foundation.h>
 i<Carbon/Carbon.h>
 i"NDAppleScriptObject_Protocols.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDAppleScriptObject_Protocols.h
-c000000004AED16E2000000000000130A
-t1257051874
+c000000004B16E00C000000000000130A
+t1259790348
 s4874
 i<Foundation/Foundation.h>
 i<Carbon/Carbon.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDComponentInstance.h
-c000000004AED16E20000000000001718
-t1257051874
+c000000004B16E00C0000000000001718
+t1259790348
 s5912
 i<Cocoa/Cocoa.h>
 i"NDAppleScriptObject_Protocols.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDHotKeyEvent.h
-c000000004AED16E20000000000005412
-t1257051874
+c000000004B16E00C0000000000005412
+t1259790348
 s21522
 i<Cocoa/Cocoa.h>
 i<Carbon/Carbon.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDProcess+QSMods.h
-c000000004AED16E20000000000000141
-t1257051874
+c000000004B16E00C0000000000000141
+t1259790348
 s321
 i<Cocoa/Cocoa.h>
 i"NDProcess.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDProcess.h
-c000000004AED16E20000000000003163
-t1257051874
+c000000004B16E00C0000000000003163
+t1259790348
 s12643
 i<Cocoa/Cocoa.h>
 i<Carbon/Carbon.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDResourceFork+OtherSorces.h
-c000000004AED16E2000000000000086A
-t1257051874
+c000000004B16E00C000000000000086A
+t1259790348
 s2154
 i<Cocoa/Cocoa.h>
 i"NDResourceFork.h"
 i"NDSDKCompatibility.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDResourceFork.h
-c000000004AED16E200000000000062CF
-t1257051874
+c000000004B16E00C00000000000062CF
+t1259790348
 s25295
 i<Foundation/Foundation.h>
 i<Carbon/Carbon.h>
 i"NDSDKCompatibility.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NDSDKCompatibility.h
-c000000004AED16E200000000000002C1
-t1257051874
+c000000004B16E00C00000000000002C1
+t1259790348
 s705
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSAppleEventDescriptor+NDAppleScriptObject.h
-c000000004AED16E200000000000112E2
-t1257051874
+c000000004B16E00C00000000000112E2
+t1259790348
 s70370
 i<Foundation/Foundation.h>
 i<Carbon/Carbon.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSAppleEventDescriptor_QSMods.h
-c000000004AED16E20000000000000285
-t1257051874
+c000000004B16E00C0000000000000285
+t1259790348
 s645
 i<Cocoa/Cocoa.h>
 i"NSAppleEventDescriptor+NDAppleScriptObject.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSAppleScript_BLTRExtensions.h
-c000000004AED16E2000000000000036B
-t1257051874
+c000000004B16E00C000000000000036B
+t1259790348
 s875
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSApplication_BLTRExtensions.h
-c000000004AED16E20000000000000589
-t1257051874
+c000000004B16E00C0000000000000589
+t1259790348
 s1417
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSArray_BLTRExtensions.h
-c000000004AED16E20000000000000488
-t1257051874
+c000000004B16E00C0000000000000488
+t1259790348
 s1160
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSBezierPath_BLTRExtensions.h
-c000000004AED16E200000000000001AF
-t1257051874
+c000000004B16E00C00000000000001AF
+t1259790348
 s431
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSBundle_BLTRExtensions.h
-c000000004AED16E200000000000001AD
-t1257051874
+c000000004B16E00C00000000000001AD
+t1259790348
 s429
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSColor_QSModifications.h
-c000000004AED16E200000000000001B6
-t1257051874
+c000000004B16E00C00000000000001B6
+t1259790348
 s438
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSCursor_InformExtensions.h
-c000000004AED16E2000000000000011D
-t1257051874
+c000000004B16E00C000000000000011D
+t1259790348
 s285
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSData_RangeExtensions.h
-c000000004AED16E200000000000000F8
-t1257051874
+c000000004B16E00C00000000000000F8
+t1259790348
 s248
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSDictionary+BLTRExtensions.h
-c000000004AED16E2000000000000011D
-t1257051874
+c000000004B16E00C000000000000011D
+t1259790348
 s285
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSEvent+BLTRExtensions.h
-c000000004AED16E20000000000000221
-t1257051874
+c000000004B16E00C0000000000000221
+t1259790348
 s545
 i<Carbon/Carbon.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSException_TraceExtensions.h
-c000000004AED16E200000000000000E9
-t1257051874
+c000000004B16E00C00000000000000E9
+t1259790348
 s233
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSFileManager_BLTRExtensions.h
-c000000004AED16E20000000000000555
-t1257051874
+c000000004B16E00C0000000000000555
+t1259790348
 s1365
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSGeometry_BLTRExtensions.h
-c000000004AED16E200000000000005CF
-t1257051874
+c000000004B16E00C00000000000005CF
+t1259790348
 s1487
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSImage+QuickLook.h
-c000000004AED16E20000000000000103
-t1257051874
+c000000004B16E00C0000000000000103
+t1259790348
 s259
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSImage_BLTRExtensions.h
-c000000004AED16E2000000000000054E
-t1257051874
+c000000004B16E00C000000000000054E
+t1259790348
 s1358
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSIndexSet+Extensions.h
-c000000004AED16E20000000000000101
-t1257051874
+c000000004B16E00C0000000000000101
+t1259790348
 s257
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSMetadataItem+BLTRExtensions.h
-c000000004AED16E2000000000000018F
-t1257051874
+c000000004B16E00C000000000000018F
+t1259790348
 s399
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSObject+BLTRExtensions.h
-c000000004AED16E200000000000000EF
-t1257051874
+c000000004B16E00C00000000000000EF
+t1259790348
 s239
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSObject+ReaperExtensions.h
-c000000004AED16E20000000000000173
-t1257051874
+c000000004B16E00C0000000000000173
+t1259790348
 s371
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSPasteboard_BLTRExtensions.h
-c000000004AED16E20000000000000123
-t1257051874
+c000000004B16E00C0000000000000123
+t1259790348
 s291
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSScreen_BLTRExtensions.h
-c000000004AED16E2000000000000014C
-t1257051874
+c000000004B16E00C000000000000014C
+t1259790348
 s332
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSSortDescriptor+BLTRExtensions.h
-c000000004AED16E20000000000000231
-t1257051874
+c000000004B16E00C0000000000000231
+t1259790348
 s561
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSString+CarbonUtilities.h
-c000000004AED16E20000000000000402
-t1257051874
+c000000004B16E00C0000000000000402
+t1259790348
 s1026
 i<Cocoa/Cocoa.h>
 i<Carbon/Carbon.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSString+NDUtilities.h
-c000000004AED16E20000000000000F1F
-t1257051874
+c000000004B16E00C0000000000000F1F
+t1259790348
 s3871
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSString_BLTRExtensions.h
-c000000004AED16E2000000000000087D
-t1257051874
+c000000004B16E00C000000000000087D
+t1259790348
 s2173
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSTableView_BLTRExtensions.h
-c000000004AED16E20000000000000175
-t1257051874
+c000000004B16E00C0000000000000175
+t1259790348
 s373
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSTask+BLTRExtensions.h
-c000000004AED16E2000000000000013E
-t1257051874
+c000000004B16E00C000000000000013E
+t1259790348
 s318
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSURL+NDCarbonUtilities.h
-c000000004AED16E20000000000001E63
-t1257051874
+c000000004B16E00C0000000000001E63
+t1259790348
 s7779
 i<Foundation/Foundation.h>
 i<Carbon/Carbon.h>
 i"NDSDKCompatibility.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSURL_BLTRExtensions.h
-c000000004AED16E20000000000000114
-t1257051874
+c000000004B16E00C0000000000000114
+t1259790348
 s276
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSUserDefaults_BLTRExtensions.h
-c000000004AED16E20000000000000105
-t1257051874
+c000000004B16E00C0000000000000105
+t1259790348
 s261
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSView_BLTRExtensions.h
-c000000004AED16E20000000000000135
-t1257051874
+c000000004B16E00C0000000000000135
+t1259790348
 s309
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSWindow_BLTRExtensions.h
-c000000004AED16E200000000000002EC
-t1257051874
+c000000004B16E00C00000000000002EC
+t1259790348
 s748
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/NSWorkspace_BLTRExtensions.h
-c000000004AED16E2000000000000061B
-t1257051874
+c000000004B16E00C000000000000061B
+t1259790348
 s1563
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/QSFoundation.h
-c000000004AED16E2000000000000073D
-t1257051874
+c000000004B16E00C000000000000073D
+t1259790348
 s1853
 i"NDAlias.h"
 i"NDAlias+AliasFile.h"
@@ -615,89 +621,89 @@ i"QSUTI.h"
 i"QSHotKeyEvent.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/QSHotKeyEvent.h
-c000000004AED16E200000000000002BF
-t1257051874
+c000000004B16E00C00000000000002BF
+t1259790348
 s703
 i<Cocoa/Cocoa.h>
 i"NDHotKeyEvent.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/QSKeyCodeTranslator.h
-c000000004AED16E2000000000000015A
-t1257051874
+c000000004B16E00C000000000000015A
+t1259790348
 s346
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/QSLSTools.h
-c000000004AED16E2000000000000011A
-t1257051874
+c000000004B16E00C000000000000011A
+t1259790348
 s282
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/QSLoginItemFunctions.h
-c000000004AED16E20000000000000126
-t1257051874
+c000000004B16E00C0000000000000126
+t1259790348
 s294
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/QSTreeController.h
-c000000004AED16E200000000000000EC
-t1257051874
+c000000004B16E00C00000000000000EC
+t1259790348
 s236
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/Headers/QSUTI.h
-c000000004AED16E200000000000000F8
-t1257051874
+c000000004B16E00C00000000000000F8
+t1259790348
 s248
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/PrivateHeaders/CGSPrivate.h
-c000000004AED16E20000000000002F1A
-t1257051874
+c000000004B16E00C0000000000002F1A
+t1259790348
 s12058
 i<Carbon/Carbon.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/QSFoundation
-c000000004AED16E2000000000009F514
-t1257051874
-s652564
+c000000004B16E00C0000000000072D28
+t1259790348
+s470312
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/Headers/QSInterfaceController.h
-c000000004AED16E200000000000008F7
-t1257051874
+c000000004B16E00C00000000000008F7
+t1259790348
 s2295
 i<Cocoa/Cocoa.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/Headers/QSObjectCell.h
-c000000004AED16E20000000000000512
-t1257051874
+c000000004B16E00C0000000000000512
+t1259790348
 s1298
 i<Foundation/Foundation.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/Headers/QSObjectView.h
-c000000004AED16E20000000000000589
-t1257051874
+c000000004B16E00C0000000000000589
+t1259790348
 s1417
 i<AppKit/AppKit.h>
 i<QSCore/QSObject.h>
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/Headers/QSResizingInterfaceController.h
-c000000004AED16E2000000000000014B
-t1257051874
+c000000004B16E00C000000000000014B
+t1259790348
 s331
 i<Foundation/Foundation.h>
 i"QSInterfaceController.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/Headers/QSSearchObjectView.h
-c000000004AED16E20000000000001371
-t1257051874
-s4977
+c000000004B16E00C00000000000013AA
+t1259790348
+s5034
 i<Foundation/Foundation.h>
 i"QSObjectView.h"
 
 N/Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/QSInterface
-c000000004AED16E2000000000009B324
-t1257051874
-s635684
+c000000004B16E00C000000000006E8D0
+t1259790348
+s452816
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -748,6 +754,113 @@ N/System/Library/Frameworks/Cocoa.framework/Cocoa
 c000000004A1F2D63000000000000A5E0
 t1243557219
 s42464
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h
+c000000004B0B75E000000000000003E2
+t1259042272
+s994
+i<Cocoa/Cocoa.h>
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m
+c000000004B1E109F0000000000000C4D
+t1260261535
+s3149
+i"NLParser.h"
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.h
+c000000004B1E132C0000000000000217
+t1260262188
+s535
+i<Cocoa/Cocoa.h>
+i"QSInterface/QSResizingInterfaceController.h"
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m
+c000000004B1E1222000000000000189C
+t1260261922
+s6300
+i<QSEffects/QSWindow.h>
+i<QSInterface/QSSearchObjectView.h>
+i<QSInterface/QSObjectCell.h>
+i<QSCore/QSExecutor.h>
+i"NL_interface.h"
+i"NLParser.h"
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.nib
+c000000004B0389D10000000000000088
+t1258523089
+s136
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interfacePrefPane.nib
+c000000004AFC7F9900000000000000AA
+t1258061721
+s170
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch
+c000000004AFC7F9900000000000000FE
+t1258061721
+s254
+i<Cocoa/Cocoa.h>
+i<QSFoundation/QSFoundation.h>
+i<QSCore/QSCore.h>
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin
+t1259792106
+s102
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Info.plist
+t1260262840
+s1995
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface
+t1259792102
+s69296
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Resources/NL_interface.nib
+t1258523091
+s8683
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Resources/NL_interfacePrefPane.nib
+t1258521841
+s3392
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NLParser.o
+t1260262613
+s18760
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface
+t1260262613
+s32008
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.LinkFileList
+c000000004B0B45C90000000000000104
+t1259029961
+s260
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.o
+t1260262613
+s37956
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NLParser.o
+t1260262607
+s21388
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface
+t2
+s0
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.LinkFileList
+c000000004B0B45C90000000000000102
+t1259029961
+s258
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.o
+t1260262608
+s40736
+
+N/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh
+c000000004AFC7F98000000000000002F
+t1258061720
+s47
 
 N/Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.h
 c000000004AFC7C3400000000000001F1
@@ -876,22 +989,104 @@ c000000004AFA4DC700000000000000AA
 t1257917895
 s170
 
+N/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-anpmgicrrwnqfcdlpzooaqylpwmf/NL_interface_Prefix.pch.gch
+t1258521847
+s64663056
+
 N/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbbtupandwzdeicyvmlyfohwdpiq/NL_interface_Prefix.pch.gch
 t1258060893
 s68615920
+
+N/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbptlfmivdzwfkesjpcxervmyxqf/NL_interface_Prefix.pch.gch
+t1259792099
+s68615920
+
+N/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-exjllyfcmadfarebpzqpgjvblejq/NL_interface_Prefix.pch.gch
+t1258521848
+s68615920
+
+N/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-ffyyhcmbnkfkgpdsfbxkzvfncfdv/NL_interface_Prefix.pch.gch
+t1259792098
+s64663056
 
 N/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-hdffvdpzxjhmtnbvognpeafvwdqz/NL_interface_Prefix.pch.gch
 t1258060893
 s64663056
 
 NInfo.plist
-c000000004AFC7F2D00000000000007C9
-t1258061613
-s1993
+c000000004B1E14D500000000000007CB
+t1260262613
+s1995
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies279754418#279754418#0(0"0(0#1#0"4300882208#0"0#
+lSLF07#2@18"Check dependencies281955640#281955640#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NLParser.o /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s281955408.076395
+e281955413.384987
+r1
+xCompileC
+xbuild/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NLParser.o
+x/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:9:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser cleanupWhitespaceIn:]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:79: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: At top level:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires method '-prepositionLocation' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires the method 'setPrepositionLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires method '-indirectObjectLocation' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires the method 'setIndirectObjectLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@59"Compile /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955408#281955413#0(2403"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:9:/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser cleanupWhitespaceIn:]':/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:79: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: At top level:/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires method '-prepositionLocation' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires the method 'setPrepositionLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires method '-indirectObjectLocation' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires the method 'setIndirectObjectLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation15(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#77#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#203#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#329#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#455#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#581#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#707#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#833#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#959#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955409#1085#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955409#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(22@80"Mac OS X version 10.5 or later is needed for use of foreach-collection-statement281955411#1312#146#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#79#0#79#0#0"0(23@13"At top level:281955411#1458#67#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#0#0#0#0#0"0(22@146"Property 'prepositionLocation' requires method '-prepositionLocation' to be defined - use @synthesize, @dynamic or provide a method implementation281955411#1525#213#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(22@153"Property 'prepositionLocation' requires the method 'setPrepositionLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation281955411#1738#220#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(22@152"Property 'indirectObjectLocation' requires method '-indirectObjectLocation' to be defined - use @synthesize, @dynamic or provide a method implementation281955411#1958#219#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(22@159"Property 'indirectObjectLocation' requires the method 'setIndirectObjectLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation281955411#2177#226#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(0#0#51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m4300885448#1204"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/i386 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -include /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbptlfmivdzwfkesjpcxervmyxqf/NL_interface_Prefix.pch -c /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m -o /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NLParser.o0#
+
+CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.o /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s281955407.530962
+e281955413.633983
+r1
+xCompileC
+xbuild/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.o
+x/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:17:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface search1:]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: 'QSSearchObjectView' may not respond to '-clearAll'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: (Messages without a matching method signature
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: will be assumed to return 'id' and accept
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: '...' as arguments.)
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:52: warning: 'NL_interface' may not respond to '-clearObjectView:'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface windowDidLoad]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:103: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface firstResponderChanged:]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:167: warning: 'QSResizingInterfaceController' may not respond to '-firstResponderChanged:'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: At top level:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: incomplete implementation of class 'NL_interface'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: method definition for '-findActions:' not found
+lSLF07#2@63"Compile /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955407#281955413#0(2693"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:17:/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface search1:]':/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: 'QSSearchObjectView' may not respond to '-clearAll'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: (Messages without a matching method signature/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: will be assumed to return 'id' and accept/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: '...' as arguments.)/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:52: warning: 'NL_interface' may not respond to '-clearObjectView:'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface windowDidLoad]':/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:103: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface firstResponderChanged:]':/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:167: warning: 'QSResizingInterfaceController' may not respond to '-firstResponderChanged:'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: At top level:/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: incomplete implementation of class 'NL_interface'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: method definition for '-findActions:' not found17(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#82#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#208#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#334#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#460#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#586#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#712#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#838#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#964#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955412#1090#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955412#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955412#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(22@51"'QSSearchObjectView' may not respond to '-clearAll'281955412#1313#121#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#50#0#50#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)281955412#1434#115#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#50#0#50#0#0"0(22@53"'NL_interface' may not respond to '-clearObjectView:'281955412#1750#123#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#52#0#52#0#26"'*' may not respond to '*'0(22@80"Mac OS X version 10.5 or later is needed for use of foreach-collection-statement281955412#1975#151#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#103#0#103#0#0"0(22@76"'QSResizingInterfaceController' may not respond to '-firstResponderChanged:'281955412#2237#147#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#167#0#167#0#26"'*' may not respond to '*'0(23@13"At top level:281955412#2384#71#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#0#0#0#0#0"0(22@49"Incomplete implementation of class 'NL_interface'281955412#2455#120#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#195#0#195#0#38"incomplete implementation of class '*'0(22@47"Method definition for '-findActions:' not found281955412#2575#118#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#195#0#195#0#35"method definition for '*' not found0(0#0#55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m4300885448#1212"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/i386 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -include /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbptlfmivdzwfkesjpcxervmyxqf/NL_interface_Prefix.pch -c /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m -o /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.o0#
 
 CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.o /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s279753693.686555
@@ -917,6 +1112,72 @@ lSLF07#2@61"Compile /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.m2797536
 CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/qs11_10_09.o /Users/aciniglio/_Dev/cocoa/qs11_10_09/qs11_10_09.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NLParser.o /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s281955402.405718
+e281955407.530782
+r1
+xCompileC
+xbuild/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NLParser.o
+x/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:9:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser cleanupWhitespaceIn:]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:79: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: At top level:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires method '-prepositionLocation' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires the method 'setPrepositionLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires method '-indirectObjectLocation' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires the method 'setIndirectObjectLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@59"Compile /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955402#281955407#0(2403"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:9:/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser cleanupWhitespaceIn:]':/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:79: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: At top level:/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires method '-prepositionLocation' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'prepositionLocation' requires the method 'setPrepositionLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires method '-indirectObjectLocation' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:107: warning: property 'indirectObjectLocation' requires the method 'setIndirectObjectLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation15(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#77#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#203#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#329#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#455#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#581#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#707#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#833#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#959#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955404#1085#126#2(7@73"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#9#0#9#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955404#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(22@80"Mac OS X version 10.5 or later is needed for use of foreach-collection-statement281955406#1312#146#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#79#0#79#0#0"0(23@13"At top level:281955406#1458#67#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#0#0#0#0#0"0(22@146"Property 'prepositionLocation' requires method '-prepositionLocation' to be defined - use @synthesize, @dynamic or provide a method implementation281955406#1525#213#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(22@153"Property 'prepositionLocation' requires the method 'setPrepositionLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation281955406#1738#220#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(22@152"Property 'indirectObjectLocation' requires method '-indirectObjectLocation' to be defined - use @synthesize, @dynamic or provide a method implementation281955406#1958#219#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(22@159"Property 'indirectObjectLocation' requires the method 'setIndirectObjectLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation281955406#2177#226#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m281954335#107#0#107#0#0"0(0#0#51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m4300885448#1198"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mtune=G4 -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/ppc -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -include /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-ffyyhcmbnkfkgpdsfbxkzvfncfdv/NL_interface_Prefix.pch -c /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m -o /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NLParser.o0#
+
+CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.o /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s281955402.404849
+e281955408.036947
+r1
+xCompileC
+xbuild/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.o
+x/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:17:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface search1:]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: 'QSSearchObjectView' may not respond to '-clearAll'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: (Messages without a matching method signature
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: will be assumed to return 'id' and accept
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: '...' as arguments.)
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:52: warning: 'NL_interface' may not respond to '-clearObjectView:'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface windowDidLoad]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:103: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface firstResponderChanged:]':
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:167: warning: 'QSResizingInterfaceController' may not respond to '-firstResponderChanged:'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: At top level:
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: incomplete implementation of class 'NL_interface'
+o/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: method definition for '-findActions:' not found
+lSLF07#2@63"Compile /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955402#281955408#0(2693"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:17:/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:26: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:27: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:28: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:29: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:30: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:32: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:33: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:34: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:35: warning: Mac OS X version 10.5 or later is needed for use of property/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface search1:]':/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: 'QSSearchObjectView' may not respond to '-clearAll'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: (Messages without a matching method signature/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: will be assumed to return 'id' and accept/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:50: warning: '...' as arguments.)/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:52: warning: 'NL_interface' may not respond to '-clearObjectView:'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface windowDidLoad]':/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:103: warning: Mac OS X version 10.5 or later is needed for use of foreach-collection-statement/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: In function '-[NL_interface firstResponderChanged:]':/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:167: warning: 'QSResizingInterfaceController' may not respond to '-firstResponderChanged:'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m: At top level:/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: incomplete implementation of class 'NL_interface'/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m:195: warning: method definition for '-findActions:' not found17(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#82#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#26#0#26#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#208#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#27#0#27#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#334#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#28#0#28#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#460#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#29#0#29#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#586#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#30#0#30#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#712#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#32#0#32#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#838#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#33#0#33#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#964#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#34#0#34#0#0"0(22@60"Mac OS X version 10.5 or later is needed for use of property281955406#1090#126#2(7@77"In file included from /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281955406#18446744073709551615#0#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#17#0#17#0#0"0(13@115"Mac OS X version 10.5 or later is needed for use of property in /Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h281955406#18446744073709551615#0#0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(6@51"/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h280735072#35#0#35#0#0"0(22@51"'QSSearchObjectView' may not respond to '-clearAll'281955406#1313#121#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#50#0#50#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)281955406#1434#115#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#50#0#50#0#0"0(22@53"'NL_interface' may not respond to '-clearObjectView:'281955406#1750#123#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#52#0#52#0#26"'*' may not respond to '*'0(22@80"Mac OS X version 10.5 or later is needed for use of foreach-collection-statement281955406#1975#151#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#103#0#103#0#0"0(22@76"'QSResizingInterfaceController' may not respond to '-firstResponderChanged:'281955406#2237#147#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#167#0#167#0#26"'*' may not respond to '*'0(23@13"At top level:281955406#2384#71#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#0#0#0#0#0"0(22@49"Incomplete implementation of class 'NL_interface'281955406#2455#120#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#195#0#195#0#38"incomplete implementation of class '*'0(22@47"Method definition for '-findActions:' not found281955406#2575#118#0(6@55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m281954722#195#0#195#0#35"method definition for '*' not found0(0#0#55"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m4300885448#1206"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mtune=G4 -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/ppc -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -include /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-ffyyhcmbnkfkgpdsfbxkzvfncfdv/NL_interface_Prefix.pch -c /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.m -o /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.o0#
+
 CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.o /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.m normal ppc objective-c com.apple.compilers.gcc.4_2
 s279753693.650649
 e279753693.937123
@@ -941,6 +1202,16 @@ lSLF07#2@61"Compile /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.m2797536
 CCompileC build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/qs11_10_09.o /Users/aciniglio/_Dev/cocoa/qs11_10_09/qs11_10_09.m normal ppc objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCreateUniversalBinary /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface normal "ppc i386"
+s281484902.775644
+e281484902.818705
+r1
+xCreateUniversalBinary
+x/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface
+xnormal
+xppc i386
+lSLF07#2@107"CreateUniversalBinary build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface normal "ppc i386"281484902#281484902#0(0"0(0#0#49"/Users/aciniglio/_Dev/cocoa/NL_interface/ppc i3864300885448#450"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    /usr/bin/lipo -create /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface -output /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface0#
+
 CCreateUniversalBinary /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface normal "ppc i386"
 s279754262.955040
 e279754262.960834
@@ -950,6 +1221,35 @@ x/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/
 xnormal
 xppc i386
 lSLF07#2@107"CreateUniversalBinary build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface normal "ppc i386"279754262#279754262#0(0"0(0#0#47"/Users/aciniglio/_Dev/cocoa/qs11_10_09/ppc i3864300882208#442"    cd /Users/aciniglio/_Dev/cocoa/qs11_10_09    /usr/bin/lipo -create /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface -output /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/Contents/MacOS/NL_interface0#
+
+CLd /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface normal i386
+s281955413.634073
+e281955413.716720
+r1
+xLd
+x/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface
+xnormal
+xi386
+lSLF07#2@134"Link /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface281955413#281955413#0(0"0(0#0#0"4300885448#777"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -filelist /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.LinkFileList -mmacosx-version-min=10.4 -bundle -framework Cocoa -framework QSCore -framework QSFoundation -framework QSInterface -framework QSEffects -o /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface0#
+
+CLd /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface normal ppc
+s281955640.917695
+e281955641.007828
+r0
+xLd
+x/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface
+xnormal
+xppc
+old: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/QSCore, file is not of required architecture
+old: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/QSFoundation, file is not of required architecture
+old: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/QSInterface, file is not of required architecture
+old: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework/QSEffects, file is not of required architecture
+oUndefined symbols:
+o  ".objc_class_name_QSResizingInterfaceController", referenced from:
+o      .objc_class_name_NL_interface in NL_interface.o
+old: symbol(s) not found
+ocollect2: ld returned 1 exit status
+lSLF07#2@133"Link /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface281955640#281955641#0(742"ld: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/QSCore, file is not of required architectureld: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/QSFoundation, file is not of required architectureld: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/QSInterface, file is not of required architectureld: warning: in /Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework/QSEffects, file is not of required architectureUndefined symbols:  ".objc_class_name_QSResizingInterfaceController", referenced from:      .objc_class_name_NL_interface in NL_interface.old: symbol(s) not foundcollect2: ld returned 1 exit status8(22@114"In /Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework/QSCore, file is not of required architecture281955641#0#128#0(6@0"281955641#0#0#0#0#0"0(22@126"In /Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework/QSFoundation, file is not of required architecture281955641#128#140#0(6@0"281955641#0#0#0#0#0"0(22@124"In /Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework/QSInterface, file is not of required architecture281955641#268#138#0(6@0"281955641#0#0#0#0#0"0(22@120"In /Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework/QSEffects, file is not of required architecture281955641#406#134#0(6@0"281955641#0#0#0#0#0"0(4@66"".objc_class_name_QSResizingInterfaceController", referenced from:281955641#559#69#0(6@0"281955641#0#0#0#0#0"0(13@47".objc_class_name_NL_interface in NL_interface.o281955641#628#54#0(6@0"281955641#0#0#0#0#0"0(13@19"Symbol(s) not found281955641#682#24#0(6@0"281955641#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status281955641#706#36#0(6@0"281955641#0#0#0#0#0"0(0#0#0"4300885448#774"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/gcc-4.2 -arch ppc -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -filelist /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.LinkFileList -mmacosx-version-min=10.4 -bundle -framework Cocoa -framework QSCore -framework QSFoundation -framework QSInterface -framework QSEffects -o /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface1#
 
 CLd /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface normal i386
 s279753694.392599
@@ -971,6 +1271,16 @@ xnormal
 xppc
 lSLF07#2@131"Link /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface279753693#279753694#0(0"0(0#0#0"4300882208#764"    cd /Users/aciniglio/_Dev/cocoa/qs11_10_09    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/gcc-4.2 -arch ppc -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development -F/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -filelist /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.LinkFileList -mmacosx-version-min=10.4 -bundle -framework Cocoa -framework QSCore -framework QSFoundation -framework QSInterface -framework QSEffects -o /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface0#
 
+CPhaseScriptExecution "Run Script" /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh
+s281955641.007921
+e281955641.639668
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh
+o2009-12-08 04:00:41.578 bltrversion[90958:903] CFBundleVersion set to 0xB2
+lSLF07#2@36"Run custom shell script 'Run Script'281955641#281955641#0(75"2009-12-08 04:00:41.578 bltrversion[90958:903] CFBundleVersion set to 0xB21(13@75"2009-12-08 04:00:41.578 bltrversion[90958:903] CFBundleVersion set to 0xB2281955641#0#75#0(1@0"0(0#0#0"4300885448#16771"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER aciniglio    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS "ppc i386"    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build    setenv BUILD_ROOT /Users/aciniglio/_Dev/cocoa/NL_interface/build    setenv BUILD_STYLE Development    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development    setenv CACHE_ROOT /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Development    setenv CONFIGURATION_BUILD_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development    setenv CONFIGURATION_TEMP_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development    setenv CONTENTS_FOLDER_PATH NL_interface.qsplugin/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/NL_interface.dst    setenv DWARF_DSYM_FILE_NAME NL_interface.qsplugin.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH NL_interface.qsplugin/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH NL_interface.qsplugin/Contents/MacOS    setenv EXECUTABLE_NAME NL_interface    setenv EXECUTABLE_PATH NL_interface.qsplugin/Contents/MacOS/NL_interface    setenv FILE_LIST /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH NL_interface.qsplugin/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development\" /Applications/Quicksilver.app/Contents/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME NL_interface.qsplugin    setenv GCC3_VERSION 3.3    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER NL_interface_Prefix.pch    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH NL_interface.qsplugin/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/NL_interface.dst    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER aciniglio    setenv INSTALL_ROOT /tmp/NL_interface.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH NL_interface.qsplugin/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.LinkFileList    setenv LINK_FILE_LIST_normal_ppc /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.4    setenv MAC_OS_X_VERSION_ACTUAL 1062    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0602    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Objects-normal    setenv OBJROOT /Users/aciniglio/_Dev/cocoa/NL_interface/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS -bundle    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH NL_interface.qsplugin/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/PkgInfo    setenv PKGINFO_PATH NL_interface.qsplugin/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH NL_interface.qsplugin/Contents/PlugIns    setenv PREBINDING YES    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH NL_interface.qsplugin/Contents/PrivateHeaders    setenv PRODUCT_NAME NL_interface    setenv PRODUCT_SETTINGS_PATH /Users/aciniglio/_Dev/cocoa/NL_interface/Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT NL_interface    setenv PROJECT_DERIVED_FILE_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/DerivedSources    setenv PROJECT_DIR /Users/aciniglio/_Dev/cocoa/NL_interface    setenv PROJECT_FILE_PATH /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj    setenv PROJECT_NAME NL_interface    setenv PROJECT_TEMP_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build    setenv PUBLIC_HEADERS_FOLDER_PATH NL_interface.qsplugin/Contents/Headers    setenv QSFrameworks /Applications/Quicksilver.app/Contents/Frameworks    setenv "QS\\_SOURCE\\_ROOT" /Users/aciniglio/_Dev/qs/blacktree-alchemy/Quicksilver    setenv QS_SOURCE_ROOT /Users/aciniglio/_Dev/qs/blacktree-alchemy/Quicksilver    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH NL_interface.qsplugin/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_NAME macosx10.6    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH NL_interface.qsplugin/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH NL_interface.qsplugin/Contents/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/aciniglio/_Dev/cocoa/NL_interface    setenv SRCROOT /Users/aciniglio/_Dev/cocoa/NL_interface    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/SymbolRepositories    setenv SYMROOT /Users/aciniglio/_Dev/cocoa/NL_interface/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME NL_interface    setenv TARGET_BUILD_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development    setenv TARGET_NAME NL_interface    setenv TARGET_TEMP_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_FILES_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_FILE_DIR /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_ROOT /Users/aciniglio/_Dev/cocoa/NL_interface/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH NL_interface.qsplugin/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER aciniglio    setenv USER_APPS_DIR /Users/aciniglio/Applications    setenv USER_LIBRARY_DIR /Users/aciniglio/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH NL_interface.qsplugin/Contents/version.plist    setenv VERSION_INFO_BUILDER aciniglio    setenv VERSION_INFO_FILE NL_interface_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:NL_interface  PROJECT:NL_interface-\""    setenv WRAPPER_EXTENSION qsplugin    setenv WRAPPER_NAME NL_interface.qsplugin    setenv WRAPPER_SUFFIX .qsplugin    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c /Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh0#
+
 CPhaseScriptExecution "Run Script" /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh
 s279754418.307697
 e279754418.619438
@@ -981,6 +1291,15 @@ x/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_
 o2009-11-12 16:33:38.585 bltrversion[7406:903] CFBundleVersion set to 0x5F
 lSLF07#2@36"Run custom shell script 'Run Script'279754418#279754418#0(74"2009-11-12 16:33:38.585 bltrversion[7406:903] CFBundleVersion set to 0x5F1(13@74"2009-11-12 16:33:38.585 bltrversion[7406:903] CFBundleVersion set to 0x5F279754418#0#74#0(1@0"0(0#0#0"4300882208#16681"    cd /Users/aciniglio/_Dev/cocoa/qs11_10_09    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER aciniglio    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS "ppc i386"    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build    setenv BUILD_ROOT /Users/aciniglio/_Dev/cocoa/qs11_10_09/build    setenv BUILD_STYLE Development    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development    setenv CACHE_ROOT /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Development    setenv CONFIGURATION_BUILD_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development    setenv CONFIGURATION_TEMP_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development    setenv CONTENTS_FOLDER_PATH NL_interface.qsplugin/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/NL_interface.dst    setenv DWARF_DSYM_FILE_NAME NL_interface.qsplugin.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH NL_interface.qsplugin/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH NL_interface.qsplugin/Contents/MacOS    setenv EXECUTABLE_NAME NL_interface    setenv EXECUTABLE_PATH NL_interface.qsplugin/Contents/MacOS/NL_interface    setenv FILE_LIST /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH NL_interface.qsplugin/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development\" /Applications/Quicksilver.app/Contents/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME NL_interface.qsplugin    setenv GCC3_VERSION 3.3    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER NL_interface_Prefix.pch    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH NL_interface.qsplugin/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/NL_interface.dst    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER aciniglio    setenv INSTALL_ROOT /tmp/NL_interface.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH NL_interface.qsplugin/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/NL_interface-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/i386/NL_interface.LinkFileList    setenv LINK_FILE_LIST_normal_ppc /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal/ppc/NL_interface.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.4    setenv MAC_OS_X_VERSION_ACTUAL 1062    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0602    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Objects-normal    setenv OBJROOT /Users/aciniglio/_Dev/cocoa/qs11_10_09/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS -bundle    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH NL_interface.qsplugin/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/PkgInfo    setenv PKGINFO_PATH NL_interface.qsplugin/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH NL_interface.qsplugin/Contents/PlugIns    setenv PREBINDING YES    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH NL_interface.qsplugin/Contents/PrivateHeaders    setenv PRODUCT_NAME NL_interface    setenv PRODUCT_SETTINGS_PATH /Users/aciniglio/_Dev/cocoa/qs11_10_09/Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT NL_interface    setenv PROJECT_DERIVED_FILE_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/DerivedSources    setenv PROJECT_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09    setenv PROJECT_FILE_PATH /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.xcodeproj    setenv PROJECT_NAME NL_interface    setenv PROJECT_TEMP_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build    setenv PUBLIC_HEADERS_FOLDER_PATH NL_interface.qsplugin/Contents/Headers    setenv QSFrameworks /Applications/Quicksilver.app/Contents/Frameworks    setenv "QS\\_SOURCE\\_ROOT" /Users/aciniglio/_Dev/qs/blacktree-alchemy/Quicksilver    setenv QS_SOURCE_ROOT /Users/aciniglio/_Dev/qs/blacktree-alchemy/Quicksilver    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH NL_interface.qsplugin/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_NAME macosx10.6    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH NL_interface.qsplugin/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH NL_interface.qsplugin/Contents/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/aciniglio/_Dev/cocoa/qs11_10_09    setenv SRCROOT /Users/aciniglio/_Dev/cocoa/qs11_10_09    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/SymbolRepositories    setenv SYMROOT /Users/aciniglio/_Dev/cocoa/qs11_10_09/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME NL_interface    setenv TARGET_BUILD_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development    setenv TARGET_NAME NL_interface    setenv TARGET_TEMP_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_FILES_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_FILE_DIR /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build    setenv TEMP_ROOT /Users/aciniglio/_Dev/cocoa/qs11_10_09/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH NL_interface.qsplugin/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER aciniglio    setenv USER_APPS_DIR /Users/aciniglio/Applications    setenv USER_LIBRARY_DIR /Users/aciniglio/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH NL_interface.qsplugin/Contents/version.plist    setenv VERSION_INFO_BUILDER aciniglio    setenv VERSION_INFO_FILE NL_interface_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:NL_interface  PROJECT:NL_interface-\""    setenv WRAPPER_EXTENSION qsplugin    setenv WRAPPER_NAME NL_interface.qsplugin    setenv WRAPPER_SUFFIX .qsplugin    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/Script-E1022B2806B3475D00299BEC.sh0#
 
+CProcessInfoPlistFile /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Info.plist Info.plist
+s281955640.856539
+e281955640.897554
+r1
+xProcessInfoPlistFile
+x/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist281955640#281955640#0(0"0(0#0#51"/Users/aciniglio/_Dev/cocoa/NL_interface/Info.plist4300885448#230"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Info.plist0#
+
 CProcessInfoPlistFile /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/Contents/Info.plist Info.plist
 s279754418.285821
 e279754418.306987
@@ -989,6 +1308,19 @@ xProcessInfoPlistFile
 x/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/Contents/Info.plist
 xInfo.plist
 lSLF07#2@18"Process Info.plist279754418#279754418#0(0"0(0#0#49"/Users/aciniglio/_Dev/cocoa/qs11_10_09/Info.plist4300882208#226"    cd /Users/aciniglio/_Dev/cocoa/qs11_10_09    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin/Contents/Info.plist0#
+
+CProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-anpmgicrrwnqfcdlpzooaqylpwmf/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s280214641.399780
+e280214648.225985
+r1
+xProcessPCH
+x/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-anpmgicrrwnqfcdlpzooaqylpwmf/NL_interface_Prefix.pch.gch
+xNL_interface_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile NL_interface_Prefix.pch280214641#280214648#0(0"0(0#0#64"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch4300882208#1086"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mtune=G4 -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/ppc -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -c /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch -o /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-anpmgicrrwnqfcdlpzooaqylpwmf/NL_interface_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbbtupandwzdeicyvmlyfohwdpiq/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s279753686.181096
@@ -1003,6 +1335,45 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@34"Precompile NL_interface_Prefix.pch279753686#279753693#0(0"0(0#0#62"/Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface_Prefix.pch4300882208#1077"    cd /Users/aciniglio/_Dev/cocoa/qs11_10_09    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/include -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/DerivedSources/i386 -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/DerivedSources -c /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface_Prefix.pch -o /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbbtupandwzdeicyvmlyfohwdpiq/NL_interface_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbptlfmivdzwfkesjpcxervmyxqf/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s281484889.461319
+e281484899.906593
+r1
+xProcessPCH
+x/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbptlfmivdzwfkesjpcxervmyxqf/NL_interface_Prefix.pch.gch
+xNL_interface_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile NL_interface_Prefix.pch281484889#281484900#0(0"0(0#0#64"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch4300885448#1091"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/i386 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -c /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch -o /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-dbptlfmivdzwfkesjpcxervmyxqf/NL_interface_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-exjllyfcmadfarebpzqpgjvblejq/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s280214641.408541
+e280214648.934722
+r1
+xProcessPCH
+x/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-exjllyfcmadfarebpzqpgjvblejq/NL_interface_Prefix.pch.gch
+xNL_interface_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile NL_interface_Prefix.pch280214641#280214648#0(0"0(0#0#64"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch4300882208#1091"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/i386 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -c /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch -o /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-exjllyfcmadfarebpzqpgjvblejq/NL_interface_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-ffyyhcmbnkfkgpdsfbxkzvfncfdv/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s281484889.460503
+e281484899.424052
+r1
+xProcessPCH
+x/var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-ffyyhcmbnkfkgpdsfbxkzvfncfdv/NL_interface_Prefix.pch.gch
+xNL_interface_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile NL_interface_Prefix.pch281484889#281484899#0(0"0(0#0#64"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch4300885448#1086"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mtune=G4 -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/include -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources/ppc -I/Users/aciniglio/_Dev/cocoa/NL_interface/build/NL_interface.build/Development/NL_interface.build/DerivedSources -c /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface_Prefix.pch -o /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-ffyyhcmbnkfkgpdsfbxkzvfncfdv/NL_interface_Prefix.pch.gch0#
+
 CProcessPCH /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-hdffvdpzxjhmtnbvognpeafvwdqz/NL_interface_Prefix.pch.gch NL_interface_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
 s279753686.179504
 e279753693.414615
@@ -1015,6 +1386,22 @@ xppc
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@34"Precompile NL_interface_Prefix.pch279753686#279753693#0(0"0(0#0#62"/Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface_Prefix.pch4300882208#1072"    cd /Users/aciniglio/_Dev/cocoa/qs11_10_09    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mtune=G4 -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/NL_interface.hmap -F/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development -F/Applications/Quicksilver.app/Contents/Frameworks -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/include -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/DerivedSources/ppc -I/Users/aciniglio/_Dev/cocoa/qs11_10_09/build/NL_interface.build/Development/NL_interface.build/DerivedSources -c /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface_Prefix.pch -o /var/folders/1A/1AcOSsjDHSajP5qdNlkqQ++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NL_interface_Prefix-hdffvdpzxjhmtnbvognpeafvwdqz/NL_interface_Prefix.pch.gch0#
+
+CStripNIB /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.nib
+s280215891.428145
+e280215891.533398
+r1
+xStripNIB
+x/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.nib
+lSLF07#2@25"StripNIB NL_interface.nib280215891#280215891#0(0"0(0#0#57"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.nib4300882208#297"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    /Developer/usr/bin/ibtool --strip /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Resources/NL_interface.nib --output-format human-readable-text /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.nib0#
+
+CStripNIB /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interfacePrefPane.nib
+s280214641.257622
+e280214641.399595
+r1
+xStripNIB
+x/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interfacePrefPane.nib
+lSLF07#2@33"StripNIB NL_interfacePrefPane.nib280214641#280214641#0(0"0(0#0#65"/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interfacePrefPane.nib4300882208#313"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    /Developer/usr/bin/ibtool --strip /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin/Contents/Resources/NL_interfacePrefPane.nib --output-format human-readable-text /Users/aciniglio/_Dev/cocoa/NL_interface/NL_interfacePrefPane.nib0#
 
 CStripNIB /Users/aciniglio/_Dev/cocoa/qs11_10_09/NL_interface.nib
 s279754262.854147
@@ -1037,6 +1424,14 @@ r0
 
 CStripNIB /Users/aciniglio/_Dev/cocoa/qs11_10_09/qs11_10_09PrefPane.nib
 r0
+
+CTouch /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin
+s281484906.349685
+e281484906.352390
+r1
+xTouch
+x/Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin
+lSLF07#2@86"Touch /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin281484906#281484906#0(0"0(0#0#0"4300885448#151"    cd /Users/aciniglio/_Dev/cocoa/NL_interface    /usr/bin/touch -c /Users/aciniglio/_Dev/cocoa/NL_interface/build/Development/NL_interface.qsplugin0#
 
 CTouch /Users/aciniglio/_Dev/cocoa/qs11_10_09/build/Development/NL_interface.qsplugin
 s279754418.619521
