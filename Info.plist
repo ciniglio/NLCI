@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleVersion</key>
-	<string>BE</string>
+	<string>DE</string>
 	<key>QSDefaultsTemplate</key>
 	<dict>
 		<key>interface.bindingname</key>

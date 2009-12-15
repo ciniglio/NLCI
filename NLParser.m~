@@ -23,7 +23,7 @@
 -(id)initWithRaw:(NSString *)rawInput{
 	self = [super init];
 	if (self) {
-		raw = rawInput;
+		raw = [rawInput lowercaseString];
 		actionLocation = -1;
 		action = nil;
 		verb = nil;
@@ -33,42 +33,68 @@
 		preposition = nil;
 		indirectObjectLocation = -1;
 		indirectObject = nil;
-		NSLog(@"raw: %@", raw);
+		NSLog(@"NLParser initialized w/ raw: %@", raw);
 	}
 	return self;
 }
 
+-(NSString *)makeLowercaseAndPunctuationFree:(NSString *)ugly {
+        NSString *up = [[ugly componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@" "];
+	NSString *pretty = [up lowercaseString];
+	return pretty;
+}
+
+-(float)getMatchScoreUsing:(NSString *)match {
+        int correct = 0;
+        int total = [[match componentsSeparatedByString:@" "] count];
+        NSArray *parts = [[self makeLowercaseAndPunctuationFree:match] componentsSeparatedByString:@" "];
+	for (NSString *part in parts){
+	         //NSLog(@"Scoring %@", part);
+	         NSRange range = [raw rangeOfString:part];
+		 if (range.location != NSNotFound) {
+		   //	   NSLog(@"Found: %@", part);
+		   correct++;
+		 }
+	}
+	return ((float) correct);// ((float) total);
+}
 
 -(NSString *)getMostLikelyActionFromActions:(NSArray *)actions {
 	int min = NSIntegerMax;
-	NSLog(@"ActionCount: %d", [actions count]);
+	float bestScore = 0;
 	int i;
+   
+	NSLog(@"ActionCount: %d", [actions count]);
+
 	for (i=0;i < [actions count]; i++){
-		NSString *act = [actions objectAtIndex:i];
+	        NSString *act = [self makeLowercaseAndPunctuationFree:[actions objectAtIndex:i]];
 		NSArray *actionParts = [act componentsSeparatedByString:@" "];
 		NSString *mainAct = [actionParts objectAtIndex:0];
-		NSLog(@"looking for %@ (%@)", mainAct, act);
+		//		NSLog(@"looking for %@ (%@)", mainAct, act);
+		//		NSLog(@"Score %f", [self getMatchScoreUsing:act]);
 		NSRange range = [raw rangeOfString:mainAct];
-		if (range.location != NSNotFound) {
-			if (range.location < min && [actionParts count] == 1) {
+		if ([self getMatchScoreUsing:act] > bestScore && range.location != NSNotFound) {
+          		NSLog (@"inside conditional");
+		        if (range.location <= min){// && [actionParts count] == 1) {
 				action = act;
 				verb = mainAct;
 				min = range.location;
 				actionLocation = min;	
+				bestScore = [self getMatchScoreUsing:act];
 			}
-			else if ([actionParts count] > 1) {
-				NSString* rawPrep = [actionParts objectAtIndex:1];
-				NSString* prep = [[rawPrep componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@""];
-				NSLog(@"ElseIf : %@", prep);
-				NSRange pRange = [raw rangeOfString:prep];
-				if (pRange.location != NSNotFound) {
-					action = act;
-					actionLocation = range.location;
-					preposition = prep;
-					prepositionLocation = pRange.location;
-					break;
-				}
-			}
+			// else if (range.location <= min && [actionParts count] > 1) {
+			//         NSString* rawPrep = [actionParts objectAtIndex:([actionParts count] - 1)];
+			// 	NSString* prep = [[rawPrep componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@""];
+			// 	NSLog(@"ElseIf : %@", prep);
+			// 	NSRange pRange = [raw rangeOfString:prep];
+			// 	if (pRange.location != NSNotFound) {
+			// 		action = act;
+			// 		actionLocation = range.location;
+			// 		preposition = prep;
+			// 		prepositionLocation = pRange.location;
+			// 		bestScore = [self getMatchScoreUsing:act];
+			// 	}
+			// }
 		}
 	}
 	return action;

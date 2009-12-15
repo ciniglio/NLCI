@@ -22,26 +22,26 @@
 	return [self initWithWindowNibName:@"NL_interface"];
 }
 
-//- (IBAction) findActions:(id)sender{
-//        // First collect all possible actions
-//	NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
-//	// update them in the view
-//	[self updateActionsNow];
-//	NSLog(@"Actions = %d", [acts count]);
-//	int arcount = [acts count];
-//	int i;
-//	NSMutableArray *actNames = [[NSMutableArray alloc] init];
-//	for ( i = 0; i < arcount; i++ ){
-//		//NSLog(@"Object:: %@",[[acts objectAtIndex:i] fileType]);
-//		[actNames addObject:[[acts objectAtIndex:i] name]];
-//	}
-//	NLParser *nlp = [[NLParser alloc] initWithRaw:@"Open peepcode-git.pdf With Preview"];
-//	NSString *likely = [nlp getMostLikelyActionFromActions:actNames];
-//	NSLog(@"Most Likely: %@, %@", likely, [nlp actionLocation]);
-//	NSLog(@"Preposition: %@", [nlp preposition]);
-//	[nlp setObjectsWithIndirect:YES];
-//	NSLog(@"DO: %@ // IO: %@", [nlp directObject], [nlp indirectObject]);
-//}
+- (IBAction) findActions:(id)sender{
+        // First collect all possible actions
+	NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
+	// update them in the view
+	[self updateActionsNow];
+	NSLog(@"Actions = %d", [acts count]);
+	int arcount = [acts count];
+	int i;
+	NSMutableArray *actNames = [[NSMutableArray alloc] init];
+	for ( i = 0; i < arcount; i++ ){
+		//NSLog(@"Object:: %@",[[acts objectAtIndex:i] fileType]);
+		[actNames addObject:[[acts objectAtIndex:i] name]];
+	}
+	NLParser *nlp = [[NLParser alloc] initWithRaw:@"Open peepcode-git.pdf With Preview"];
+	NSString *likely = [nlp getMostLikelyActionFromActions:actNames];
+	NSLog(@"Most Likely: %@, %@", likely, [nlp actionLocation]);
+	NSLog(@"Preposition: %@", [nlp preposition]);
+	[nlp setObjectsWithIndirect:YES];
+	NSLog(@"DO: %@ // IO: %@", [nlp directObject], [nlp indirectObject]);
+}
 
 - (IBAction) search1: (id)sender{
 	
