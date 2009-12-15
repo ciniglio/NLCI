@@ -22,8 +22,9 @@
 	return [self initWithWindowNibName:@"NL_interface"];
 }
 
+// @TODO Stupidly named change later
 - (IBAction) findActions:(id)sender{
-        // First collect all possible actions
+        // First collect all possible actions (this is necessary due to plugin possibilities)
 	NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
 	// update them in the view
 	[self updateActionsNow];
@@ -37,6 +38,7 @@
 	}
 	NLParser *nlp = [[NLParser alloc] initWithRaw:@"Open peepcode-git.pdf With Preview"];
 	NSString *likely = [nlp getMostLikelyActionFromActions:actNames];
+	[nlp findAndSetPreposition];
 	NSLog(@"Most Likely: %@, %@", likely, [nlp actionLocation]);
 	NSLog(@"Preposition: %@", [nlp preposition]);
 	[nlp setObjectsWithIndirect:YES];

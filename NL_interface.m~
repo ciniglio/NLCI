@@ -23,7 +23,9 @@
 }
 
 - (IBAction) findActions:(id)sender{
+        // First collect all possible actions
 	NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
+	// update them in the view
 	[self updateActionsNow];
 	NSLog(@"Actions = %d", [acts count]);
 	int arcount = [acts count];
@@ -83,7 +85,7 @@
     [[self window] setFrameAutosaveName:@"qs11_10_09Window"];
 
 	// If it's off the screen, bring it back in
-    [[self window]setFrame:constrainRectToRect([[self window]frame],[[[self window]screen]visibleFrame]) display:NO];
+	//   [[self window]setFrame:constrainRectToRect([[self window]frame],[[[self window]screen]visibleFrame]) display:NO];
 
 
 // How much the interface moves when it's showing / hiding

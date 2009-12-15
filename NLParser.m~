@@ -40,13 +40,15 @@
 
 -(NSString *)makeLowercaseAndPunctuationFree:(NSString *)ugly {
         NSString *up = [[ugly componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@" "];
-	NSString *pretty = [up lowercaseString];
+        NSString *spaced = [up stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	NSString *pretty = [spaced lowercaseString];
 	return pretty;
 }
 
 -(float)getMatchScoreUsing:(NSString *)match {
         int correct = 0;
-        int total = [[match componentsSeparatedByString:@" "] count];
+        int rawTotal = [[raw componentsSeparatedByString:@" "] count];
+	int matchTotal = [[match componentsSeparatedByString:@" "] count];
         NSArray *parts = [[self makeLowercaseAndPunctuationFree:match] componentsSeparatedByString:@" "];
 	for (NSString *part in parts){
 	         //NSLog(@"Scoring %@", part);
@@ -56,7 +58,23 @@
 		   correct++;
 		 }
 	}
-	return ((float) correct);// ((float) total);
+	return ((float) correct) / (((float) rawTotal + (float) matchTotal));
+}
+
+-(void *)findAndSetPreposition{
+        NSString *prep = [self getPrepositionIfAny];
+        NSRange range = [raw rangeOfString:prep];
+        if (range.location != NSNotFound) {
+                preposition = prep;
+				prepositionLocation = range.location;
+        }
+}
+
+-(NSString *)getPrepositionIfAny {
+        NSString *cleanAction = [self makeLowercaseAndPunctuationFree:action];
+    	NSArray *cleanParts = [cleanAction componentsSeparatedByString:@" "];
+        NSString *prep = [cleanParts objectAtIndex:[cleanParts count] - 1];
+        return prep;
 }
 
 -(NSString *)getMostLikelyActionFromActions:(NSArray *)actions {
@@ -67,6 +85,7 @@
 	NSLog(@"ActionCount: %d", [actions count]);
 
 	for (i=0;i < [actions count]; i++){
+                NSString *actName = [actions objectAtIndex:i];
 	        NSString *act = [self makeLowercaseAndPunctuationFree:[actions objectAtIndex:i]];
 		NSArray *actionParts = [act componentsSeparatedByString:@" "];
 		NSString *mainAct = [actionParts objectAtIndex:0];
@@ -76,7 +95,7 @@
 		if ([self getMatchScoreUsing:act] > bestScore && range.location != NSNotFound) {
           		NSLog (@"inside conditional");
 		        if (range.location <= min){// && [actionParts count] == 1) {
-				action = act;
+				action = actName;
 				verb = mainAct;
 				min = range.location;
 				actionLocation = min;	

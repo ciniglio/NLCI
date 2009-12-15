@@ -320,7 +320,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E643864B10D778C700D14E3E</string>
+										<string>E643865010D78FF600D14E3E</string>
 										<key>history</key>
 										<array>
 											<string>E64385C610CE543000D14E3E</string>
@@ -645,7 +645,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E643864C10D778C700D14E3E</string>
+		<string>E643865110D78FF600D14E3E</string>
 		<string>E64385C010CE53FF00D14E3E</string>
 		<string>E64385C110CE53FF00D14E3E</string>
 		<string>/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj</string>
