@@ -12,6 +12,7 @@
 #import <QSInterface/QSSearchObjectView.h>
 #import <QSInterface/QSObjectCell.h>
 #import <QSCore/QSExecutor.h>
+#import <QSCore/QSAction.h>
 
 #import "NL_interface.h"
 #import "NLParser.h"
@@ -19,11 +20,14 @@
 @implementation NL_interface
 
 - (id)init {
-	return [self initWithWindowNibName:@"NL_interface"];
+	[self initWithWindowNibName:@"NL_interface"];
+	//[mainField setHeight:55];
+	return self;
 }
 
 // @TODO Stupidly named change later
 - (IBAction) findActions:(id)sender{
+	NSString *query = [mainField stringValue];
         // First collect all possible actions (this is necessary due to plugin possibilities)
 	NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
 	// update them in the view
@@ -33,16 +37,25 @@
 	int i;
 	NSMutableArray *actNames = [[NSMutableArray alloc] init];
 	for ( i = 0; i < arcount; i++ ){
-		//NSLog(@"Object:: %@",[[acts objectAtIndex:i] fileType]);
-		[actNames addObject:[[acts objectAtIndex:i] name]];
+		NSLog(@"Object:: %d",[[acts objectAtIndex:i] argumentCount]);
+		[actNames addObject:[[[[acts objectAtIndex:i] name] componentsSeparatedByString:@"("] objectAtIndex:0]];
 	}
-	NLParser *nlp = [[NLParser alloc] initWithRaw:@"Open peepcode-git.pdf With Preview"];
-	NSString *likely = [nlp getMostLikelyActionFromActions:actNames];
+
+	
+	NLParser *nlp = [[NLParser alloc] initWithRaw:query];
+	int likelyIndex = [nlp getMostLikelyActionFromActions:actNames];
+	QSAction *likelyAction = [acts objectAtIndex:likelyIndex];
+	BOOL indirect = [likelyAction argumentCount] == 1 ? NO : YES;
 	[nlp findAndSetPreposition];
-	NSLog(@"Most Likely: %@, %@", likely, [nlp actionLocation]);
+	NSLog(@"Most Likely: %@, %@, %d", [likelyAction name], [nlp actionLocation], [likelyAction argumentCount]);
 	NSLog(@"Preposition: %@", [nlp preposition]);
-	[nlp setObjectsWithIndirect:YES];
+	[nlp setObjectsWithIndirect:indirect];
 	NSLog(@"DO: %@ // IO: %@", [nlp directObject], [nlp indirectObject]);
+}
+
+- (QSAction *) getActionFromName:(NSString *)name{
+        QSExecutor *qse = [QSExecutor sharedInstance];
+	return [qse actionForIdentifier:name];
 }
 
 - (IBAction) search1: (id)sender{

@@ -320,11 +320,12 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E643865010D78FF600D14E3E</string>
+										<string>E64386DB10D7A73800D14E3E</string>
 										<key>history</key>
 										<array>
-											<string>E64385C610CE543000D14E3E</string>
-											<string>E643862E10CE5DCB00D14E3E</string>
+											<string>E643865B10D7922400D14E3E</string>
+											<string>E64386D810D7A73000D14E3E</string>
+											<string>E64386D910D7A73000D14E3E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -502,7 +503,7 @@
 						<key>Frame</key>
 						<string>{{0, 0}, {1116, 152}}</string>
 						<key>RubberWindowFrame</key>
-						<string>306 160 1116 718 0 0 1440 878 </string>
+						<string>290 160 1116 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -578,10 +579,10 @@
 							<key>Frame</key>
 							<string>{{545, 0}, {571, 178}}</string>
 							<key>RubberWindowFrame</key>
-							<string>306 160 1116 718 0 0 1440 878 </string>
+							<string>290 160 1116 718 0 0 1440 878 </string>
 						</dict>
 						<key>RubberWindowFrame</key>
-						<string>306 160 1116 718 0 0 1440 878 </string>
+						<string>290 160 1116 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -645,13 +646,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E643865110D78FF600D14E3E</string>
+		<string>E64386DC10D7A73800D14E3E</string>
 		<string>E64385C010CE53FF00D14E3E</string>
 		<string>E64385C110CE53FF00D14E3E</string>
 		<string>/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>306 160 1116 718 0 0 1440 878 </string>
+	<string>290 160 1116 718 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

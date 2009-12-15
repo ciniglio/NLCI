@@ -16,6 +16,7 @@
 {
 	IBOutlet NSTextField *tf1;
 	IBOutlet NSTextField *tf2;
+	IBOutlet NSTextField *mainField;
 }
 - (IBAction) search1:(id)sender;
 - (IBAction) search2:(id)sender;

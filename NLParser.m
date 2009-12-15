@@ -26,6 +26,7 @@
 		raw = [rawInput lowercaseString];
 		actionLocation = -1;
 		action = nil;
+		actionRemainder = nil;
 		verb = nil;
 		directObjectLocation = -1;
 		directObject = nil;
@@ -44,6 +45,20 @@
         NSString *spaced = [up stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	NSString *pretty = [spaced lowercaseString];
 	return pretty;
+}
+
+-(float)actionProbable{
+        int correct = 0;
+	NSArray *parts = [[self makeLowercaseAndPunctuationFree:action] componentsSeparatedByString:@" "];
+	int possible = [parts count];
+	for (NSString *part in parts){
+	         //
+        	 NSRange range = [raw rangeOfString:part];
+		 if (range.location != NSNotFound) {
+		   correct++;
+		 }
+        }
+	return ((float) correct) / ((float) possible);
 }
 
 // Method that scores the similiarity of a string to $raw
@@ -85,10 +100,10 @@
 
 // Searches through a given array to find most likely action in raw, 
 // using the scoring function from above
--(NSString *)getMostLikelyActionFromActions:(NSArray *)actions {
+-(int)getMostLikelyActionFromActions:(NSArray *)actions {
 	int min = NSIntegerMax;
 	float bestScore = 0;
-	int i;
+	int i,ret;
    
 	NSLog(@"ActionCount: %d", [actions count]);
 	// iterate through each possible action
@@ -100,15 +115,19 @@
 		NSRange range = [raw rangeOfString:mainAct];
 		if ([self getMatchScoreUsing:act] > bestScore && range.location != NSNotFound) {
 		        if (range.location <= min){
+        			ret = i;
 				action = actName;
 				verb = mainAct;
 				min = range.location;
 				actionLocation = min;	
 				bestScore = [self getMatchScoreUsing:act];
+				actionRemainder = [raw substringFromIndex:(min + [act length])];
 			}
 		}
 	}
-	return action;
+	if ([self actionProbable] > .7)
+	        return ret;
+	return -1;
 }
 
 // Removes trailing and leading whitespace
@@ -132,15 +151,28 @@
 			doRange.location = actionLocation + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length];
 			doRange.length = prepositionLocation - doRange.location;
 			directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];//[[rawArray subarrayWithRange:doRange] componentsJoinedByString:@""];
-			directObjectLocation = actionLocation + 1;
+			directObjectLocation = doRange.location + 1;
 			
 			NSRange ioRange;
 			ioRange.location = prepositionLocation + [preposition length];
 			ioRange.length = [raw length] - ioRange.location;
 			indirectObject = [self cleanupWhitespaceIn:[raw substringWithRange:ioRange]];
-			indirectObjectLocation = prepositionLocation + 1;
+			indirectObjectLocation = ioRange.location + 1;
 		}
 	}
+	else {
+		NSRange doRange;
+		doRange.location = actionLocation + [[self makeLowercaseAndPunctuationFree:action] length];
+		doRange.length = [[self makeLowercaseAndPunctuationFree:raw] length] -
+		                 [[self makeLowercaseAndPunctuationFree:action] length];
+		directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
+		directObjectLocation = doRange.location + 1;
+	}
+
+}
+
+- (void)doubleObjectParserWithPossibleObjects:(NSArray *)possible{
+        
 }
 
 

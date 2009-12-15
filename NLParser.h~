@@ -12,7 +12,6 @@
 @interface NLParser : NSObject {
 	NSString *raw;
 	NSString *action;
-	NSString *actionRemainder;
 	NSString *verb;
 	NSString *directObject;
 	NSString *preposition;
