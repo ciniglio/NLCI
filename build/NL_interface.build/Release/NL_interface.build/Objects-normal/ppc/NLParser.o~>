@@ -1,0 +1,25 @@
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser findAndSetPreposition]':
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:86: warning: 'NLParser' may not respond to '-getPrepositionIfAny'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:86: warning: (Messages without a matching method signature
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:86: warning: will be assumed to return 'id' and accept
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:86: warning: '...' as arguments.)
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser getMostLikelyActionFromActions:]':
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:105: warning: conflicting types for '-(int)getMostLikelyActionFromActions:(NSArray *)actions'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.h:41: warning: previous declaration of '-(NSString *)getMostLikelyActionFromActions:(NSArray *)actions'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser setObjectsWithIndirect:]':
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:175: warning: 'NLParser' may not respond to '-doubleObjectParser'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: In function '-[NLParser doubleObjectParser]':
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:222: warning: 'NSArray' may not respond to '-length'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:222: warning: initialization makes integer from pointer without a cast
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:228: warning: incompatible Objective-C types assigning 'struct NSString *', expected 'struct NSMutableString *'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:230: warning: incompatible Objective-C types assigning 'struct NSString *', expected 'struct NSMutableString *'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:233: warning: incompatible Objective-C types assigning 'struct NSString *', expected 'struct NSMutableString *'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:236: warning: incompatible Objective-C types assigning 'struct NSString *', expected 'struct NSMutableString *'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:237: warning: incompatible Objective-C types assigning 'struct NSString *', expected 'struct NSMutableString *'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m: At top level:
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:249: warning: property 'prepositionLocation' requires method '-prepositionLocation' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:249: warning: property 'prepositionLocation' requires the method 'setPrepositionLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:249: warning: property 'indirectObjectLocation' requires method '-indirectObjectLocation' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:249: warning: property 'indirectObjectLocation' requires the method 'setIndirectObjectLocation:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:249: warning: incomplete implementation of class 'NLParser'
+/Users/aciniglio/_Dev/cocoa/NL_interface/NLParser.m:249: warning: method definition for '-initWithRaw:' not found

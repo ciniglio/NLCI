@@ -308,7 +308,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>E6E3A7DC10AA854F00C83986</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NLParser.m</string>
+								<string>NL_interface.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -316,16 +316,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>E6E3A7DD10AA854F00C83986</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NLParser.m</string>
+										<string>NL_interface.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E64386DB10D7A73800D14E3E</string>
+										<string>E643875810DA4C6800D14E3E</string>
 										<key>history</key>
 										<array>
 											<string>E643865B10D7922400D14E3E</string>
-											<string>E64386D810D7A73000D14E3E</string>
-											<string>E64386D910D7A73000D14E3E</string>
+											<string>E643874A10DA4BD100D14E3E</string>
+											<string>E643874B10DA4BD100D14E3E</string>
+											<string>E643874C10DA4BD100D14E3E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -646,7 +647,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E64386DC10D7A73800D14E3E</string>
+		<string>E643875910DA4C6800D14E3E</string>
 		<string>E64385C010CE53FF00D14E3E</string>
 		<string>E64385C110CE53FF00D14E3E</string>
 		<string>/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj</string>

@@ -18,6 +18,9 @@
 	NSString *preposition;
 	NSString *indirectObject;
 	
+	NSMutableDictionary *nounSynonyms;
+	NSMutableArray *possibleNouns;
+
 	int actionLocation;
 	int directObjectLocation;
 	int prepositionLocation;

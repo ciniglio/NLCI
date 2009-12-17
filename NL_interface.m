@@ -13,6 +13,7 @@
 #import <QSInterface/QSObjectCell.h>
 #import <QSCore/QSExecutor.h>
 #import <QSCore/QSAction.h>
+#import <QSCore/QSLibrarian.h>
 
 #import "NL_interface.h"
 #import "NLParser.h"
@@ -30,6 +31,12 @@
 	NSString *query = [mainField stringValue];
         // First collect all possible actions (this is necessary due to plugin possibilities)
 	NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
+	NSMutableArray *catalogContents = [[[QSLibrarian sharedInstance] catalog] contents];
+	NSMutableArray *possibleNouns = [[NSMutableArray alloc] initWithCapacity:10];
+	for (NSString* content in catalogContents){
+	  [possibleNouns addObject:[content name]];
+	  NSLog(@"Contents: %@", [content name]);
+	}
 	// update them in the view
 	[self updateActionsNow];
 	NSLog(@"Actions = %d", [acts count]);
@@ -42,7 +49,7 @@
 	}
 
 	
-	NLParser *nlp = [[NLParser alloc] initWithRaw:query];
+	NLParser *nlp = [[NLParser alloc] initWithRaw:query withPossibleNouns:possibleNouns];
 	int likelyIndex = [nlp getMostLikelyActionFromActions:actNames];
 	QSAction *likelyAction = [acts objectAtIndex:likelyIndex];
 	BOOL indirect = [likelyAction argumentCount] == 1 ? NO : YES;
