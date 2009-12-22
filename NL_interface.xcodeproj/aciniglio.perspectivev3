@@ -308,7 +308,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>E6E3A7DC10AA854F00C83986</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NL_interface.m</string>
+								<string>NLParser.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -316,17 +316,14 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>E6E3A7DD10AA854F00C83986</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NL_interface.m</string>
+										<string>NLParser.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E643875810DA4C6800D14E3E</string>
+										<string>E6C2B90510E0E8BA00320C16</string>
 										<key>history</key>
 										<array>
-											<string>E643865B10D7922400D14E3E</string>
-											<string>E643874A10DA4BD100D14E3E</string>
-											<string>E643874B10DA4BD100D14E3E</string>
-											<string>E643874C10DA4BD100D14E3E</string>
+											<string>E6C2B8FA10E0E06200320C16</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -340,16 +337,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {909, 429}}</string>
+								<string>{{0, 0}, {909, 405}}</string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>429pt</string>
+							<string>405pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>243pt</string>
+							<string>267pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -363,7 +360,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {909, 216}}</string>
+										<string>{{10, 27}, {909, 240}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -417,7 +414,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {909, 216}}</string>
+										<string>{{10, 27}, {909, 240}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -445,11 +442,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E64385B710CE53FF00D14E3E</string>
+				<string>E6C2B8E010E0DF4600320C16</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>E64385B810CE53FF00D14E3E</string>
+				<string>E6C2B8E110E0DF4600320C16</string>
 				<string>E6E3A7DC10AA854F00C83986</string>
-				<string>E64385B910CE53FF00D14E3E</string>
+				<string>E6C2B8E210E0DF4600320C16</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -502,14 +499,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {1116, 152}}</string>
+						<string>{{0, 0}, {1116, 102}}</string>
 						<key>RubberWindowFrame</key>
 						<string>290 160 1116 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
 					<key>Proportion</key>
-					<string>152pt</string>
+					<string>102pt</string>
 				</dict>
 				<dict>
 					<key>ContentConfiguration</key>
@@ -528,8 +525,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {545, 178}}</string>
-									<string>{{545, 0}, {571, 178}}</string>
+									<string>{{0, 0}, {545, 195}}</string>
+									<string>{{545, 0}, {571, 195}}</string>
 								</array>
 							</dict>
 							<key>VerticalSplitView</key>
@@ -544,8 +541,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {1116, 178}}</string>
-									<string>{{0, 178}, {1116, 342}}</string>
+									<string>{{0, 0}, {1116, 195}}</string>
+									<string>{{0, 195}, {1116, 375}}</string>
 								</array>
 							</dict>
 						</dict>
@@ -565,7 +562,7 @@
 						<key>DebugSTDIOWindowFrame</key>
 						<string>{{200, 200}, {500, 300}}</string>
 						<key>Frame</key>
-						<string>{{0, 157}, {1116, 520}}</string>
+						<string>{{0, 107}, {1116, 570}}</string>
 						<key>PBXDebugSessionStackFrameViewKey</key>
 						<dict>
 							<key>DebugVariablesTableConfiguration</key>
@@ -578,7 +575,7 @@
 								<real>341</real>
 							</array>
 							<key>Frame</key>
-							<string>{{545, 0}, {571, 178}}</string>
+							<string>{{545, 0}, {571, 195}}</string>
 							<key>RubberWindowFrame</key>
 							<string>290 160 1116 718 0 0 1440 878 </string>
 						</dict>
@@ -588,7 +585,7 @@
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
 					<key>Proportion</key>
-					<string>520pt</string>
+					<string>570pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -606,13 +603,13 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E64385BA10CE53FF00D14E3E</string>
+				<string>E6C2B8E310E0DF4600320C16</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>E64385BB10CE53FF00D14E3E</string>
-				<string>E64385BC10CE53FF00D14E3E</string>
-				<string>E64385BD10CE53FF00D14E3E</string>
-				<string>E64385BE10CE53FF00D14E3E</string>
+				<string>E6C2B8E410E0DF4600320C16</string>
+				<string>E6C2B8E510E0DF4600320C16</string>
+				<string>E6C2B8E610E0DF4600320C16</string>
+				<string>E6C2B8E710E0DF4600320C16</string>
 				<string>E6E3A7DC10AA854F00C83986</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
@@ -647,9 +644,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E643875910DA4C6800D14E3E</string>
-		<string>E64385C010CE53FF00D14E3E</string>
-		<string>E64385C110CE53FF00D14E3E</string>
+		<string>E6C2B90610E0E8BA00320C16</string>
+		<string>E6C2B8F310E0DFC700320C16</string>
+		<string>E6C2B8F410E0DFC700320C16</string>
 		<string>/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
