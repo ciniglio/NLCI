@@ -26,7 +26,7 @@
 	return self;
 }
 
-- (NSArray *) getPossibleActions{
+- (NSArray *) getPossibleActionNames{
   NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
   [self updateActionsNow];
   NSLog(@"Actions = %d", [acts count]);
@@ -53,34 +53,18 @@
 // @TODO Stupidly named change later
 - (IBAction) findActions:(id)sender{
 	NSString *query = [mainField stringValue];
-        // First collect all possible actions (this is necessary due to plugin possibilities)
-	NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
-	NSMutableArray *catalogContents = [[[QSLibrarian sharedInstance] catalog] contents];
-	NSMutableArray *possibleNouns = [[NSMutableArray alloc] initWithCapacity:10];
-	for (NSString* content in catalogContents){
-	  [possibleNouns addObject:[content name]];
-	  NSLog(@"Contents: %@", [content name]);
-	}
-	// update them in the view
-	[self updateActionsNow];
-	NSLog(@"Actions = %d", [acts count]);
-	int arcount = [acts count];
-	int i;
-	NSMutableArray *actNames = [[NSMutableArray alloc] init];
-	for ( i = 0; i < arcount; i++ ){
-		NSLog(@"Object:: %d",[[acts objectAtIndex:i] argumentCount]);
-		[actNames addObject:[[[[acts objectAtIndex:i] name] componentsSeparatedByString:@"("] objectAtIndex:0]];
-	}
 
-	
+	NSArray *possibleNouns = [self getPossibleNouns];
+	NSArray *possibleActionNames = [self getPossibleActionNames];
+	NSMutableArray *possibleActions = [[QSExecutor sharedInstance] actions];
 	NLParser *nlp = [[NLParser alloc] initWithRaw:query withPossibleNouns:possibleNouns];
 	if ([nlp handleSynonyms]){
 	  NSLog(@"worked");
 	  //[self hideMainWindow:self];
 	  return;
 	}
-	int likelyIndex = [nlp getMostLikelyActionFromActions:actNames];
-	QSAction *likelyAction = [acts objectAtIndex:likelyIndex];
+	int likelyIndex = [nlp getMostLikelyActionFromActions:possibleActionNames];
+	QSAction *likelyAction = [possibleActions objectAtIndex:likelyIndex];
 	BOOL indirect = [likelyAction argumentCount] == 1 ? NO : YES;
 	[nlp findAndSetPreposition];
 	NSLog(@"Most Likely: %@, %@, %d", [likelyAction name], [nlp actionLocation], [likelyAction argumentCount]);
