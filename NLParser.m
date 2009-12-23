@@ -19,12 +19,14 @@
 
 @synthesize actionLocation;
 @synthesize directObjectLocation;
+@synthesize nounSynonyms;
+//@synthesize verb
 
 -(id)initWithRaw:(NSString *)rawInput withPossibleNouns:(NSMutableArray *)pNouns{
 	self = [super init];
 	if (self) {
 		raw = [rawInput lowercaseString];
-		nounSynonyms = nil;
+		nounSynonyms = [NSMutableDictionary dictionary];
 		possibleNouns = pNouns;
 		actionLocation = -1;
 		action = nil;
@@ -37,6 +39,7 @@
 		indirectObjectLocation = -1;
 		indirectObject = nil;
 		NSLog(@"NLParser initialized w/ raw: %@", raw);
+		
 	}
 	return self;
 }
@@ -252,68 +255,127 @@ if n in n_synonyms.keys:
 	return NO;
 	
 
-}//
-//
-//- (BOOL)nSynonymous:(NSString *)p1 with:(NSString *)p2 {
-//  /*     SYNONYMS:
-//
-//N1 is N2
-//
-//global dictionary n_synonyms
-//global array Nouns
-//
-//for words in sentence:
-//    if (word == is)
-//        assignment = true;
-//	break;
-//
-//part1 = sentence.split("is")[0]
-//part2 = sentence.split("is")[1]
-//
-//if part1 in nouns:
-//   n_synonyms[part2] = part1
-//else if part2 in nouns:
-//   n_synonyms[part1] = part2
-//else if part1 in synonyms.keys():
-//   n_synonyms[part1] = part2
-//else if part2 in synonyms.keys():
-//   n_synonyms[part2] = part1
-//else: 
-//   error("I don't know what $part1 or $part2 are")
-//   return;
-//n_synonyms.save()
-//	*/
-//
-//  BOOL p1Main, p2Main;
-//  for (NSString *noun in possibleNouns){
-//    if (p1 == noun)
-//      p1Main = YES;
-//    if (p2 == noun)
-//      p2Main = YES;
-//  }
-//  if (p1Main && p2Main)
-//    //error
-//    return YES;
-//  if (p1Main) {
-//    [nSynonyms setObject:p1 forKey:p2];
-//    return YES;
-//  }
-//  else if (p2Main) {
-//    [nSynonyms setObject:p2 forKey:p1];
-//  }
-//  for (NSString *key in [nSynonyms allKeys]){
-//    if (p1 == key){
-//      [nSynonyms setObject:p2 forKey:p1];
-//      return YES;
-//    }
-//    if (p2 == key){
-//      [nSynonyms setObject:p1 forKey:p2];
-//      return YES;
-//    }
-//  }
-//  return NO;
-//
-//}
-//
-//
+}
+
+- (BOOL) handleSynonyms {
+  [self unarchiveDicts];
+  NSArray *parts = [raw componentsSeparatedByString:@"is"];
+  if ([parts count] == 1)
+    return NO;
+  BOOL noun = [self nSynonymous:[self cleanupWhitespaceIn:[[parts objectAtIndex:0] lowercaseString]]
+			   with:[self cleanupWhitespaceIn:[[parts objectAtIndex:1] lowercaseString]]];
+  [self archiveDicts];
+  return noun;
+}
+
+- (NSString *) pathForSynonymsDataFile
+{
+  NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+  NSString *folder = @"~/Library/Application Support/NatLangCI/";
+  folder = [folder stringByExpandingTildeInPath];
+
+  if ([fileManager fileExistsAtPath: folder] == NO)
+  {
+    [fileManager createDirectoryAtPath: folder attributes: nil];
+  }
+    
+  NSString *fileName = @"nouns.syn";
+  return [folder stringByAppendingPathComponent: fileName];    
+}
+
+- (void)archiveDicts{
+  //NSLog(@"Check ff: %@", [nounSynonyms objectForKey:@"ff"]);
+  NSString *path = [self pathForSynonymsDataFile];
+  NSMutableDictionary *rootObject;
+  rootObject = [NSMutableDictionary dictionary];
+  
+  [rootObject setValue:[self nounSynonyms] forKey:@"Nouns"];
+  [NSKeyedArchiver archiveRootObject:rootObject toFile:path];
+}
+
+- (void)unarchiveDicts {
+  NSString *path = [self pathForSynonymsDataFile];
+  NSDictionary *rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+  [self setNounSynonyms:[rootObject objectForKey:@"Nouns"]];
+}
+
+- (BOOL)nSynonymous:(NSString *)p1 with:(NSString *)p2 {
+ /*     SYNONYMS:
+
+N1 is N2
+
+global dictionary n_synonyms
+global array Nouns
+
+for words in sentence:
+   if (word == is)
+       assignment = true;
+	break;
+
+part1 = sentence.split("is")[0]
+part2 = sentence.split("is")[1]
+
+if part1 in nouns:
+  n_synonyms[part2] = part1
+else if part2 in nouns:
+  n_synonyms[part1] = part2
+else if part1 in synonyms.keys():
+  n_synonyms[part1] = part2
+else if part2 in synonyms.keys():
+  n_synonyms[part2] = part1
+else: 
+  error("I don't know what $part1 or $part2 are")
+  return;
+n_synonyms.save()
+	*/
+  BOOL p1Main = NO;
+  BOOL p2Main = NO;
+  NSLog(@"Setting synonyms: %@, %@", p1, p2);
+  for (NSString *noun in possibleNouns){
+    NSString *lNoun = [noun lowercaseString];
+    //NSLog(@"Checking against: %@", lNoun);
+    //if ([p1 isEqualToString:@"firefox.app"])
+    //NSLog(@"found ff");
+    if ([p1 isEqualToString:lNoun]){
+      NSLog(@"p1 is equal to noun");
+      p1Main = YES;
+    }
+    if ([p2 isEqualToString:lNoun]){
+      NSLog(@"p2 is equal to noun");
+      p2Main = YES;
+    }
+  }
+  NSLog(@"Done searching: %d, %d", p1Main, p2Main);
+  if (p1Main == YES && p2Main == YES){
+    return YES;
+  }
+  if (p1Main == YES) {
+    NSLog(@"p1 main");
+    [[self nounSynonyms] setObject:p1 forKey:p2];
+    return YES;
+  }
+  else if (p2Main == YES) {
+    NSLog(@"p2 main");
+    [nounSynonyms setObject:p2 forKey:p1];
+    return YES;
+  }
+  NSLog(@"Now looking at existing syns");
+  for (NSString *key in [nounSynonyms allKeys]){
+    NSLog(@"HOAT: %@, %@, %@", key, p1, p2);
+    if ([p1 isEqualToString:key]){
+      NSLog(@"P1 was already there...-- %@", [nounSynonyms objectForKey:p1]);
+      [nounSynonyms setObject:[nounSynonyms objectForKey:p1] forKey:p2];
+      return YES;
+    }
+    if ([p2 isEqualToString:key]){
+      NSLog(@"p2 was already there...");
+      [nounSynonyms setObject:[nounSynonyms objectForKey:p2] forKey:p1];
+      return YES;
+    }
+  }
+  return NO; 
+}
+
+
 @end

@@ -32,6 +32,7 @@
 @property (retain) NSString *directObject;
 @property (retain) NSString *preposition;
 @property (retain) NSString *indirectObject;
+@property (retain) NSMutableDictionary *nounSynonyms;
 
 @property int actionLocation;
 @property int directObjectLocation;

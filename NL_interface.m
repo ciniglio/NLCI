@@ -26,6 +26,30 @@
 	return self;
 }
 
+- (NSArray *) getPossibleActions{
+  NSMutableArray *acts = [[QSExecutor sharedInstance] actions];
+  [self updateActionsNow];
+  NSLog(@"Actions = %d", [acts count]);
+  int arcount = [acts count];
+  int i;
+  NSMutableArray *actNames = [[NSMutableArray alloc] init];
+  for ( i = 0; i < arcount; i++ ){
+    NSLog(@"Object:: %d",[[acts objectAtIndex:i] argumentCount]);
+    [actNames addObject:[[[[acts objectAtIndex:i] name] componentsSeparatedByString:@"("] objectAtIndex:0]];
+  }
+  return actNames;
+}
+
+- (NSArray *) getPossibleNouns{
+  NSMutableArray *catalogContents = [[[QSLibrarian sharedInstance] catalog] contents];
+  NSMutableArray *possibleNouns = [[NSMutableArray alloc] initWithCapacity:10];
+  for (NSString* content in catalogContents){
+    [possibleNouns addObject:[content name]];
+    NSLog(@"Contents: %@", [content name]);
+  }
+  return possibleNouns;
+}
+
 // @TODO Stupidly named change later
 - (IBAction) findActions:(id)sender{
 	NSString *query = [mainField stringValue];
@@ -50,6 +74,11 @@
 
 	
 	NLParser *nlp = [[NLParser alloc] initWithRaw:query withPossibleNouns:possibleNouns];
+	if ([nlp handleSynonyms]){
+	  NSLog(@"worked");
+	  //[self hideMainWindow:self];
+	  return;
+	}
 	int likelyIndex = [nlp getMostLikelyActionFromActions:actNames];
 	QSAction *likelyAction = [acts objectAtIndex:likelyIndex];
 	BOOL indirect = [likelyAction argumentCount] == 1 ? NO : YES;
