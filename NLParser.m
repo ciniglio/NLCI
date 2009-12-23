@@ -25,9 +25,9 @@
 -(id)initWithRaw:(NSString *)rawInput withPossibleNouns:(NSMutableArray *)pNouns{
 	self = [super init];
 	if (self) {
-		raw = [rawInput lowercaseString];
-		nounSynonyms = [NSMutableDictionary dictionary];
-		possibleNouns = pNouns;
+		raw = [[rawInput retain] lowercaseString];
+		nounSynonyms = [[NSMutableDictionary dictionary] retain];
+		possibleNouns = [pNouns retain];
 		actionLocation = -1;
 		action = nil;
 		actionRemainder = nil;
@@ -172,19 +172,15 @@
 		}
 	
 		else {
-		// NSRange doRange;
-		// doRange.location = actionLocation + [[self makeLowercaseAndPunctuationFree:action] length];
-		// doRange.length = [[self makeLowercaseAndPunctuationFree:raw] length] -
-		//                  [[self makeLowercaseAndPunctuationFree:action] length];
-		// directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
-		// directObjectLocation = doRange.location + 1;
 		  NSLog(@"No preposition");
 		  [self doubleObjectParser];
 		}
 	}
 	else {
-	  directObject = [self nounMatch:[self cleanupWhitespaceIn:actionRemainder]];
-	  directObjectLocation = actionLocation + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length] + 1;
+	  directObject = [self cleanupWhitespaceIn:actionRemainder];
+	  directObjectLocation = actionLocation 
+	                       + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length] 
+	                       + 1;
 	}
 
 }
@@ -244,9 +240,9 @@ if n in n_synonyms.keys:
 	         [part2 appendString:(@" %@", [inWords objectAtIndex:j])];
 	         part2 = [self cleanupWhitespaceIn:part2];
 	     }
-	     if ([[self nounMatch:part1] length] && [[self nounMatch:part2] length]){
-	              part1 = [self nounMatch:part1];
-		      part2 = [self nounMatch:part2];
+	     if ([part1 length] && [part2 length]){
+	              // part1 = [self nounMatch:part1];
+		      // part2 = [self nounMatch:part2];
 	              directObject = part2;
 		      indirectObject = part1;
 		      return YES;
@@ -280,7 +276,7 @@ if n in n_synonyms.keys:
     [fileManager createDirectoryAtPath: folder attributes: nil];
   }
     
-  NSString *fileName = @"nouns.syn";
+  NSString *fileName = @"syns.nlci";
   return [folder stringByAppendingPathComponent: fileName];    
 }
 

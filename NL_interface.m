@@ -22,7 +22,7 @@
 
 - (id)init {
 	[self initWithWindowNibName:@"NL_interface"];
-	//[mainField setHeight:55];
+	//	[mainField setStringValue@""];
 	return self;
 }
 
@@ -60,17 +60,22 @@
 	NLParser *nlp = [[NLParser alloc] initWithRaw:query withPossibleNouns:possibleNouns];
 	if ([nlp handleSynonyms]){
 	  NSLog(@"worked");
-	  //[self hideMainWindow:self];
+	  [self hideMainWindow:self];
 	  return;
 	}
 	int likelyIndex = [nlp getMostLikelyActionFromActions:possibleActionNames];
 	QSAction *likelyAction = [possibleActions objectAtIndex:likelyIndex];
 	BOOL indirect = [likelyAction argumentCount] == 1 ? NO : YES;
 	[nlp findAndSetPreposition];
+	[nlp setObjectsWithIndirect:indirect];
+
+	// Logging
 	NSLog(@"Most Likely: %@, %@, %d", [likelyAction name], [nlp actionLocation], [likelyAction argumentCount]);
 	NSLog(@"Preposition: %@", [nlp preposition]);
-	[nlp setObjectsWithIndirect:indirect];
 	NSLog(@"DO: %@ // IO: %@", [nlp directObject], [nlp indirectObject]);
+	// /Bunyan
+
+	
 }
 
 - (QSAction *) getActionFromName:(NSString *)name{
@@ -171,6 +176,7 @@
 
 - (void)showMainWindow:(id)sender{
 	if ([[self window]isVisible])[[self window]pulse:self];
+	[mainField setStringValue:@""];
 	[super showMainWindow:sender];
 }
 

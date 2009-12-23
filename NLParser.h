@@ -27,12 +27,17 @@
 	int indirectObjectLocation;
 }
 
-@property (retain) NSString *raw;
-@property (retain) NSString *action;
-@property (retain) NSString *directObject;
-@property (retain) NSString *preposition;
-@property (retain) NSString *indirectObject;
-@property (retain) NSMutableDictionary *nounSynonyms;
+@property (nonatomic, copy) NSString *raw;
+@property (nonatomic, copy) NSString *action;
+@property (nonatomic, copy) NSString *actionRemainder;
+@property (nonatomic, copy) NSString *verb;
+@property (nonatomic, copy) NSString *directObject;
+@property (nonatomic, copy) NSString *preposition;
+@property (nonatomic, copy) NSString *indirectObject;
+	
+@property (nonatomic, retain) NSMutableDictionary *nounSynonyms;
+@property (nonatomic, retain) NSMutableArray *possibleNouns;
+
 
 @property int actionLocation;
 @property int directObjectLocation;
@@ -45,3 +50,4 @@
 - (id) initWithRaw:(NSString *)raw;
 
 @end
+

@@ -12,11 +12,15 @@
 @interface NLParser : NSObject {
 	NSString *raw;
 	NSString *action;
+	NSString *actionRemainder;
 	NSString *verb;
 	NSString *directObject;
 	NSString *preposition;
 	NSString *indirectObject;
 	
+	NSMutableDictionary *nounSynonyms;
+	NSMutableArray *possibleNouns;
+
 	int actionLocation;
 	int directObjectLocation;
 	int prepositionLocation;
@@ -28,6 +32,7 @@
 @property (retain) NSString *directObject;
 @property (retain) NSString *preposition;
 @property (retain) NSString *indirectObject;
+@property (retain) NSMutableDictionary *nounSynonyms;
 
 @property int actionLocation;
 @property int directObjectLocation;
