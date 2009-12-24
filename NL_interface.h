@@ -22,7 +22,7 @@
 - (IBAction) search1:(id)sender;
 - (IBAction) search2:(id)sender;
 - (IBAction) findActions:(id)sender;
--(void)updateDetailsString;
+- (void)updateDetailsString;
 
 @property (nonatomic, retain) IBOutlet NSTextField *tf1;
 @property (nonatomic, retain) IBOutlet NSTextField *tf2;	

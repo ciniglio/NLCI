@@ -50,6 +50,13 @@
   return possibleNouns;
 }
 
+- (void) clearSearchFor:(id)selector{
+  [selector clearSearch];
+  [selector clearAll];
+  [selector clearObjectValue];
+  [self clearObjectView:selector];
+}
+
 // @TODO Stupidly named change later
 - (IBAction) findActions:(id)sender{
 	NSString *query = [mainField stringValue];
@@ -74,8 +81,18 @@
 	NSLog(@"Preposition: %@", [nlp preposition]);
 	NSLog(@"DO: %@ // IO: %@", [nlp directObject], [nlp indirectObject]);
 	// /Bunyan
-
 	
+	[self clearSearchFor:[self dSelector]];
+	[self clearSearchFor:[self aSelector]];
+	[self clearSearchFor:[self iSelector]];
+	
+	[dSelector performSearchFor:[nlp directObject] from:dSelector];
+	[self updateActionsNow];
+	[aSelector performSearchFor:[nlp action] from:aSelector];
+	[self updateIndirectObjects];
+	if ([[nlp indirectObject] length] > 0){
+	  [iSelector performSearchFor:[nlp indirectObject] from:iSelector];
+	}
 }
 
 - (QSAction *) getActionFromName:(NSString *)name{
