@@ -64,13 +64,15 @@
 	NSArray *possibleNouns = [self getPossibleNouns];
 	NSArray *possibleActionNames = [self getPossibleActionNames];
 	NSMutableArray *possibleActions = [[QSExecutor sharedInstance] actions];
-	NLParser *nlp = [[NLParser alloc] initWithRaw:query withPossibleNouns:possibleNouns];
+	NLParser *nlp = [[NLParser alloc] initWithRaw:query 
+				    withPossibleNouns:possibleNouns
+			       andWithPossibleActions:possibleActionNames];
 	if ([nlp handleSynonyms]){
 	  NSLog(@"worked");
 	  [self hideMainWindow:self];
 	  return;
 	}
-	int likelyIndex = [nlp getMostLikelyActionFromActions:possibleActionNames];
+	int likelyIndex = [nlp getMostLikelyAction];
 	QSAction *likelyAction = [possibleActions objectAtIndex:likelyIndex];
 	BOOL indirect = [likelyAction argumentCount] == 1 ? NO : YES;
 	[nlp findAndSetPreposition];
