@@ -62,8 +62,9 @@
 	NSString *query = [mainField stringValue];
 
 	NSArray *possibleNouns = [self getPossibleNouns];
-	NSArray *possibleActionNames = [self getPossibleActionNames];
-	NSMutableArray *possibleActions = [[QSExecutor sharedInstance] actions];
+	NSMutableArray *possibleActionNames = [self getPossibleActionNames];
+	NSMutableArray *possibleActions = [[NSMutableArray alloc] init];
+	[possibleActions addObjectsFromArray:[[QSExecutor sharedInstance] actions]];
 	NLParser *nlp = [[NLParser alloc] initWithRaw:query 
 				    withPossibleNouns:possibleNouns
 			       andWithPossibleActions:possibleActionNames];
@@ -72,6 +73,7 @@
 	  [self hideMainWindow:self];
 	  return;
 	}
+	[possibleActions addObjectsFromArray:[[nlp verbSynonyms] allValues]];
 	int likelyIndex = [nlp getMostLikelyAction];
 	QSAction *likelyAction = [possibleActions objectAtIndex:likelyIndex];
 	//	[nlp parseVerbSynonyms];

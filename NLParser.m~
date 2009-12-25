@@ -19,19 +19,26 @@
 
 @synthesize actionLocation;
 @synthesize directObjectLocation;
-
 @synthesize nounSynonyms;
-//@synthesize verb
+@synthesize verbSynonyms;
 
--(id)initWithRaw:(NSString *)rawInput withPossibleNouns:(NSMutableArray *)pNouns{
+@synthesize possibleNouns;
+@synthesize possibleActions;
+
+-(id)initWithRaw:(NSString *)rawInput 
+withPossibleNouns:(NSMutableArray *)pNouns
+andWithPossibleActions:(NSMutableArray *)pActions{
 	self = [super init];
 	if (self) {
-		raw = [rawInput lowercaseString];
-		nounSynonyms = nil;
-		possibleNouns = pNouns;
-		actionLocation = -1;
+		raw = [[rawInput retain] lowercaseString];
+		nounSynonyms = [[NSMutableDictionary dictionary] retain];
+		verbSynonyms = [[NSMutableDictionary dictionary] retain];
+		possibleNouns = [pNouns retain];
+		possibleActions = [pActions retain];
+		[self setActionLocation:-1];
 		action = nil;
 		actionRemainder = nil;
+		trueAction = nil;
 		verb = nil;
 		directObjectLocation = -1;
 		directObject = nil;
@@ -40,6 +47,7 @@
 		indirectObjectLocation = -1;
 		indirectObject = nil;
 		NSLog(@"NLParser initialized w/ raw: %@", raw);
+		
 	}
 	return self;
 }
@@ -53,8 +61,10 @@
 }
 
 -(float)actionProbable{
+        NSLog(@"started actionProbable");
         int correct = 0;
 	NSArray *parts = [[self makeLowercaseAndPunctuationFree:action] componentsSeparatedByString:@" "];
+	
 	int possible = [parts count];
 	for (NSString *part in parts){
 	         //
@@ -109,35 +119,42 @@
 
 // Searches through a given array to find most likely action in raw, 
 // using the scoring function from above
--(int)getMostLikelyActionFromActions:(NSArray *)actions {
+- (int)getMostLikelyAction {
 	int min = NSIntegerMax;
 	float bestScore = 0;
 	int i,ret;
-   
+	NSMutableArray *actions = [self possibleActions];
+	[actions addObjectsFromArray:[[self verbSynonyms] allKeys]];
+	NSInteger numActions = [actions count];
 	NSLog(@"ActionCount: %d", [actions count]);
 	// iterate through each possible action
 	for (i=0;i < [actions count]; i++){
                 NSString *actName = [actions objectAtIndex:i];
-	        NSString *act = [self makeLowercaseAndPunctuationFree:actName];
+	        NSString *act = [[self makeLowercaseAndPunctuationFree:actName] retain];
 		NSArray *actionParts = [act componentsSeparatedByString:@" "];
 		NSString *mainAct = [actionParts objectAtIndex:0]; // assumes the verb is the first word in the action
 		NSRange range = [raw rangeOfString:mainAct];
+
 		if ([self getMatchScoreUsing:act] > bestScore && range.location != NSNotFound) {
 		        if (range.location <= min){
         			ret = i;
-				action = actName;
-				verb = mainAct;
+				action = [actName retain];
+				verb = [mainAct retain];
 				min = range.location;
 				actionLocation = min;	
 				bestScore = [self getMatchScoreUsing:act];
-				actionRemainder = [self cleanupWhitespaceIn:[raw substringFromIndex:(min + [mainAct length])]];
+				actionRemainder = [[self cleanupWhitespaceIn:[raw substringFromIndex:(min + [mainAct length])]] retain];
 			}
 		}
 	}
+	NSLog(@"Actionscore email: %f", [self getMatchScoreUsing:@"email"]);
+	NSLog(@"Actionscore email with: %f", [self getMatchScoreUsing:@"email with"]);
 	NSLog(@"ActionLocation : %d", actionLocation);
 	NSLog(@"Action remainder: %@", actionRemainder);
-	if ([self actionProbable] > .7)
-	        return ret;
+	if ([self actionProbable] > .7){
+	  NSLog(@"actionprobable done");
+	  return ret;
+	}
 	return -1;
 }
 
@@ -159,9 +176,17 @@
 		if (prepositionLocation > 0) {
 			NSArray *rawArray = [raw componentsSeparatedByString:@" "];
 			NSRange doRange;
-			doRange.location = actionLocation + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length];
+			NSString *mainAct = [[action componentsSeparatedByString:@" "] objectAtIndex:0];
+			NSInteger mainActLength = [mainAct length];
+			NSInteger actionLoc = actionLocation;
+
+			NSLog(@"sowi: actionLoc: %d", [self actionLocation] + mainActLength);
+			doRange.location = actionLocation + mainActLength;
+			NSLog(@"sowi: doRangeLoc: %d", doRange.location);
+			NSLog(@"sowi: prerpLoc: %d", prepositionLocation);
 			doRange.length = prepositionLocation - doRange.location;
-			directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];//[[rawArray subarrayWithRange:doRange] componentsJoinedByString:@""];
+			NSLog(@"sowi: doranglen: %d", doRange.length);
+			directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
 			directObjectLocation = doRange.location + 1;
 			
 			NSRange ioRange;
@@ -172,19 +197,15 @@
 		}
 	
 		else {
-		// NSRange doRange;
-		// doRange.location = actionLocation + [[self makeLowercaseAndPunctuationFree:action] length];
-		// doRange.length = [[self makeLowercaseAndPunctuationFree:raw] length] -
-		//                  [[self makeLowercaseAndPunctuationFree:action] length];
-		// directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
-		// directObjectLocation = doRange.location + 1;
 		  NSLog(@"No preposition");
 		  [self doubleObjectParser];
 		}
 	}
 	else {
-	  directObject = [self nounMatch:[self cleanupWhitespaceIn:actionRemainder]];
-	  directObjectLocation = actionLocation + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length] + 1;
+	  directObject = [self cleanupWhitespaceIn:actionRemainder];
+	  directObjectLocation = actionLocation 
+	                       + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length] 
+	                       + 1;
 	}
 
 }
@@ -244,9 +265,9 @@ if n in n_synonyms.keys:
 	         [part2 appendString:(@" %@", [inWords objectAtIndex:j])];
 	         part2 = [self cleanupWhitespaceIn:part2];
 	     }
-	     if ([[self nounMatch:part1] length] && [[self nounMatch:part2] length]){
-	              part1 = [self nounMatch:part1];
-		      part2 = [self nounMatch:part2];
+	     if ([part1 length] && [part2 length]){
+	              // part1 = [self nounMatch:part1];
+		      // part2 = [self nounMatch:part2];
 	              directObject = part2;
 		      indirectObject = part1;
 		      return YES;
@@ -256,7 +277,28 @@ if n in n_synonyms.keys:
 	
 
 }
-- (NSString *) pathForNounsDataFile
+
+- (BOOL) handleSynonyms {
+  [self unarchiveDicts];
+  NSArray *parts = [raw componentsSeparatedByString:@"is"];
+  if ([parts count] == 1)
+    return NO;
+  NSString *cleanPart1 = [self cleanupWhitespaceIn:[[parts objectAtIndex:0] lowercaseString]];
+  NSString *cleanPart2 = [self cleanupWhitespaceIn:[[parts objectAtIndex:1] lowercaseString]];
+  BOOL noun = [self nSynonymous:cleanPart1
+			   with:cleanPart2];
+  BOOL verb = [self vSynonymous:cleanPart1
+			   with:cleanPart2];
+  [self archiveDicts];
+  return (noun || verb);
+}
+
+- (void) parseVerbSynonyms {
+  NSString *targetString = [raw substringToIndex:actionLocation];
+  NSLog (@"target: %@", targetString);
+}
+
+- (NSString *) pathForSynonymsDataFile
 {
   NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -268,20 +310,26 @@ if n in n_synonyms.keys:
     [fileManager createDirectoryAtPath: folder attributes: nil];
   }
     
-  NSString *fileName = @"nouns.syn";
+  NSString *fileName = @"syns.nlci";
   return [folder stringByAppendingPathComponent: fileName];    
 }
 
 - (void)archiveDicts{
-  NSString *nounPath = [self pathForNounsDataFile];
+  //NSLog(@"Check ff: %@", [nounSynonyms objectForKey:@"ff"]);
+  NSString *path = [self pathForSynonymsDataFile];
   NSMutableDictionary *rootObject;
   rootObject = [NSMutableDictionary dictionary];
   
   [rootObject setValue:[self nounSynonyms] forKey:@"Nouns"];
-  [NSKeyedArchiver archiveRootObject:rootObject toFile:nounPath];
+  [rootObject setValue:[self nounSynonyms] forKey:@"Verbs"];
+  [NSKeyedArchiver archiveRootObject:rootObject toFile:path];
 }
 
 - (void)unarchiveDicts {
+  NSString *path = [self pathForSynonymsDataFile];
+  NSDictionary *rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+  [self setNounSynonyms:[rootObject objectForKey:@"Nouns"]];
+  [self setVerbSynonyms:[rootObject objectForKey:@"Verbs"]];
 }
 
 - (BOOL)nSynonymous:(NSString *)p1 with:(NSString *)p2 {
@@ -313,36 +361,131 @@ else:
   return;
 n_synonyms.save()
 	*/
+  BOOL p1Main = NO;
+  BOOL p2Main = NO;
+  NSLog(@"Setting synonyms: %@, %@", p1, p2);
+  for (NSString *noun in possibleNouns){
+    NSString *lNoun = [noun lowercaseString];
+    //NSLog(@"Checking against: %@", lNoun);
+    //if ([p1 isEqualToString:@"firefox.app"])
+    //NSLog(@"found ff");
+    if ([p1 isEqualToString:lNoun]){
+      NSLog(@"p1 is equal to noun");
+      p1Main = YES;
+    }
+    if ([p2 isEqualToString:lNoun]){
+      NSLog(@"p2 is equal to noun");
+      p2Main = YES;
+    }
+  }
+  NSLog(@"Done searching: %d, %d", p1Main, p2Main);
+  if (p1Main == YES && p2Main == YES){
+    return YES;
+  }
+  if (p1Main == YES) {
+    NSLog(@"p1 main");
+    [[self nounSynonyms] setObject:p1 forKey:p2];
+    return YES;
+  }
+  else if (p2Main == YES) {
+    NSLog(@"p2 main");
+    [nounSynonyms setObject:p2 forKey:p1];
+    return YES;
+  }
+  NSLog(@"Now looking at existing syns");
+  for (NSString *key in [nounSynonyms allKeys]){
+    NSLog(@"HOAT: %@, %@, %@", key, p1, p2);
+    if ([p1 isEqualToString:key]){
+      NSLog(@"P1 was already there...-- %@", [nounSynonyms objectForKey:p1]);
+      [nounSynonyms setObject:[nounSynonyms objectForKey:p1] forKey:p2];
+      return YES;
+    }
+    if ([p2 isEqualToString:key]){
+      NSLog(@"p2 was already there...");
+      [nounSynonyms setObject:[nounSynonyms objectForKey:p2] forKey:p1];
+      return YES;
+    }
+  }
+  return NO; 
+}
+- (BOOL)vSynonymous:(NSString *)p1 with:(NSString *)p2 {
+ /*     SYNONYMS:
 
- BOOL p1Main, p2Main;
- for (NSString *noun in possibleNouns){
-   if ([p1 isEqualToString:noun])
-     p1Main = YES;
-   if ([p2 isEqualToString:noun])
-     p2Main = YES;
- }
- if (p1Main && p2Main)
-   //error
-   return YES;
- if (p1Main) {
-   [nounSynonyms setObject:p1 forKey:p2];
-   return YES;
- }
- else if (p2Main) {
-   [nounSynonyms setObject:p2 forKey:p1];
- }
- for (NSString *key in [nounSynonyms allKeys]){
-   if (p1 == key){
-     [nounSynonyms setObject:p2 forKey:p1];
-     return YES;
-   }
-   if (p2 == key){
-     [nounSynonyms setObject:p1 forKey:p2];
-     return YES;
-   }
- }
- return NO;
+N1 is N2
 
+global dictionary n_synonyms
+global array Nouns
+
+for words in sentence:
+   if (word == is)
+       assignment = true;
+	break;
+
+part1 = sentence.split("is")[0]
+part2 = sentence.split("is")[1]
+
+if part1 in nouns:
+  n_synonyms[part2] = part1
+else if part2 in nouns:
+  n_synonyms[part1] = part2
+else if part1 in synonyms.keys():
+  n_synonyms[part1] = part2
+else if part2 in synonyms.keys():
+  n_synonyms[part2] = part1
+else: 
+  error("I don't know what $part1 or $part2 are")
+  return;
+n_synonyms.save()
+	*/
+  BOOL p1Main = NO;
+  BOOL p2Main = NO;
+  NSString *fullVerbName;
+  NSLog(@"Setting synonyms: %@, %@", p1, p2);
+  for (NSString *verb in possibleActions){
+    NSString *lVerb = [self makeLowercaseAndPunctuationFree:[verb lowercaseString]];
+    //NSLog(@"Checking against: %@", lNoun);
+    //if ([p1 isEqualToString:@"firefox.app"])
+    //NSLog(@"found ff");
+    if ([p1 isEqualToString:lVerb]){
+      NSLog(@"p1 is equal to vb");
+      fullVerbName = verb;
+      p1Main = YES;
+    }
+    if ([p2 isEqualToString:lVerb]){
+      NSLog(@"p2 is equal to vb");
+      fullVerbName = verb;
+      p2Main = YES;
+    }
+  }
+  NSLog(@"Done searching: %d, %d", p1Main, p2Main);
+  if (p1Main == YES && p2Main == YES){
+    return YES;
+  }
+  if (p1Main == YES) {
+    NSLog(@"p1 main");
+    [[self verbSynonyms] setObject:fullVerbName forKey:p2];
+    return YES;
+  }
+  else if (p2Main == YES) {
+    NSLog(@"p2 main");
+    [[self verbSynonyms] setObject:fullVerbName forKey:p1];
+    return YES;
+  }
+  NSLog(@"Now looking at existing syns");
+  for (NSString *key in [verbSynonyms allKeys]){
+    NSLog(@"HOAT: %@, %@, %@", key, p1, p2);
+    if ([p1 isEqualToString:key]){
+      NSLog(@"P1 was already there...-- %@", [verbSynonyms objectForKey:p1]);
+      [verbSynonyms setObject:[verbSynonyms objectForKey:p1] forKey:p2];
+      return YES;
+    }
+    if ([p2 isEqualToString:key]){
+      NSLog(@"p2 was already there...");
+      [verbSynonyms setObject:[verbSynonyms objectForKey:p2] forKey:p1];
+      return YES;
+    }
+  }
+  return NO; 
 }
 
 

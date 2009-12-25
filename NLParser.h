@@ -12,6 +12,7 @@
 @interface NLParser : NSObject {
 	NSString *raw;
 	NSString *action;
+	NSString *trueAction;
 	NSString *actionRemainder;
 	NSString *verb;
 	NSString *directObject;
@@ -22,7 +23,8 @@
 	NSMutableArray *possibleNouns;
 
 	NSMutableDictionary *verbSynonyms;
-	NSMutableArray *possibleActions;
+	NSArray *possibleActions;
+	NSMutableArray *possibleVerbs;
 
 	NSInteger actionLocation;
 	int directObjectLocation;
@@ -32,6 +34,7 @@
 
 @property (nonatomic, copy) NSString *raw;
 @property (nonatomic, copy) NSString *action;
+@property (nonatomic, copy) NSString *trueAction;
 @property (nonatomic, copy) NSString *actionRemainder;
 @property (nonatomic, copy) NSString *verb;
 @property (nonatomic, copy) NSString *directObject;
@@ -42,7 +45,8 @@
 @property (nonatomic, retain) NSMutableArray *possibleNouns;
 
 @property (nonatomic, retain) NSMutableDictionary *verbSynonyms;
-@property (nonatomic, retain) NSMutableArray *possibleActions;
+@property (nonatomic, retain) NSArray *possibleActions;
+@property (nonatomic, retain) NSMutableArray *possibleVerbs;
 
 
 @property (nonatomic, assign) NSInteger actionLocation;
