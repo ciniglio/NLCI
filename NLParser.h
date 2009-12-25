@@ -55,9 +55,15 @@
 @property int indirectObjectLocation;
 
 - (NSString *) getMostLikelyActionFromActions:(NSArray *)actions;
+- (NSString *) getPrepositionIfAny;
 - (void)setObjectsWithIndirect:(BOOL)indirect;
 - (NSString *)cleanupWhitespaceIn:(NSString *)str;
 - (id) initWithRaw:(NSString *)raw;
+
+- (void)archiveDicts;
+- (void)unarchiveDicts;
+- (BOOL)nSynonymous:(NSString *)p1 with:(NSString *)p2;
+- (BOOL)vSynonymous:(NSString *)p1 with:(NSString *)p2;
 
 @end
 

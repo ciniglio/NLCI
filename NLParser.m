@@ -33,8 +33,8 @@ andWithPossibleActions:(NSMutableArray *)pActions{
         self = [super init];
         if (self) {
                 raw = [[rawInput retain] lowercaseString];
-                nounSynonyms = [[NSMutableDictionary dictionary] retain];
-                verbSynonyms = [[NSMutableDictionary dictionary] retain];
+                nounSynonyms = [[NSMutableDictionary alloc] initWithCapacity:10];
+                verbSynonyms = [[NSMutableDictionary alloc] initWithCapacity:10];
                 possibleNouns = [pNouns retain];
                 possibleActions = [pActions retain];
 		possibleVerbs = [pActions retain];
@@ -263,18 +263,18 @@ if n in n_synonyms.keys:
                     if (!found) error "please specify more stuff"
 */
         NSArray *inWords = [actionRemainder componentsSeparatedByString:@" "];
-        int len = [[actionRemainder componentsSeparatedByString:@" "] length];
+        int len = [[actionRemainder componentsSeparatedByString:@" "] count];
         int i = 0; int j = 0;
         NSMutableString *part1 = [[NSMutableString alloc] initWithString:@""];
         NSMutableString *part2 = [[NSMutableString alloc] initWithString:@""];
         for (i = 0; i < len; i++){
              [part1 appendString:(@" %@", [inWords objectAtIndex:i])];
-                 part1 = [self cleanupWhitespaceIn:part1];
+			 part1 = (NSMutableString *) [self cleanupWhitespaceIn:part1];
         }
-             part2 = @"";
+             
              for (j = i; j < len; j++){
                  [part2 appendString:(@" %@", [inWords objectAtIndex:j])];
-                 part2 = [self cleanupWhitespaceIn:part2];
+                 part2 = (NSMutableString *) [self cleanupWhitespaceIn:part2];
              }
              if ([part1 length] && [part2 length]){
                       // part1 = [self nounMatch:part1];
@@ -291,21 +291,28 @@ if n in n_synonyms.keys:
 
 - (BOOL) handleSynonyms {
   [self unarchiveDicts];
+  NSLog(@"Number of nounSynonyms: %d", [nounSynonyms count]);
+  NSLog(@"Number of verbSynonyms: %d", [verbSynonyms count]);
   NSArray *parts = [raw componentsSeparatedByString:@"is"];
+  for (NSString *key in [nounSynonyms allKeys]){
+    NSLog(@"Nsynonyms %@::%@", key, [nounSynonyms objectForKey:key]);
+  }
   if ([parts count] == 1)
     return NO;
   NSString *cleanPart1 = [self cleanupWhitespaceIn:[[parts objectAtIndex:0] lowercaseString]];
   NSString *cleanPart2 = [self cleanupWhitespaceIn:[[parts objectAtIndex:1] lowercaseString]];
-  BOOL noun = NO; BOOL verb = NO;
+  BOOL noun = NO; BOOL verbB = NO;
   noun = [self nSynonymous:cleanPart1
 		      with:cleanPart2];
   if (noun != YES){
-    verb = [self vSynonymous:cleanPart1
+    verbB = [self vSynonymous:cleanPart1
 			with:cleanPart2];
   }
-  
+  NSLog(@"Number of nounSynonyms: %d", [nounSynonyms count]);
+  NSLog(@"Number of verbSynonyms: %d", [verbSynonyms count]);
+
   [self archiveDicts];
-  return (noun || verb);
+  return (noun || verbB);
 }
 
 - (void) parseVerbSynonyms {
@@ -320,9 +327,9 @@ if n in n_synonyms.keys:
   NSString *folder = @"~/Library/Application Support/NatLangCI/";
   folder = [folder stringByExpandingTildeInPath];
 
-  if ([fileManager fileExistsAtPath: folder] == NO)
+  if ([fileManager fileExistsAtPath:folder] == NO)
   {
-    [fileManager createDirectoryAtPath: folder attributes: nil];
+    [fileManager createDirectoryAtPath:folder attributes: nil];
   }
     
   NSString *fileName = @"syns.nlci";
@@ -333,18 +340,30 @@ if n in n_synonyms.keys:
   //NSLog(@"Check ff: %@", [nounSynonyms objectForKey:@"ff"]);
   NSString *path = [self pathForSynonymsDataFile];
   NSMutableDictionary *rootObject;
-  rootObject = [NSMutableDictionary dictionary];
-  
+  rootObject = [[NSMutableDictionary alloc] initWithCapacity:3];
+  NSMutableDictionary *tester = [[NSMutableDictionary alloc] initWithCapacity:1];
+  [tester setObject:@"ale" forKey:@"susan"];
+  NSLog(@"tester: %@", [tester objectForKey:@"susan"]);
+  [rootObject setValue:tester forKey:@"test"];
   [rootObject setValue:[self nounSynonyms] forKey:@"Nouns"];
-  [rootObject setValue:[self nounSynonyms] forKey:@"Verbs"];
+  [rootObject setValue:[self verbSynonyms] forKey:@"Verbs"];
   [NSKeyedArchiver archiveRootObject:rootObject toFile:path];
 }
 
 - (void)unarchiveDicts {
   NSString *path = [self pathForSynonymsDataFile];
   NSDictionary *rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-  [self setNounSynonyms:[rootObject objectForKey:@"Nouns"]];
-  [self setVerbSynonyms:[rootObject objectForKey:@"Verbs"]];
+  NSLog(@"unarchive ncount: %d", [[rootObject objectForKey:@"Nouns"] count]);
+  NSLog(@"unarchive totalCount: %d", [rootObject count]);
+  if ([[rootObject objectForKey:@"test"] count] > 0){
+    [self setNounSynonyms:[[rootObject objectForKey:@"test"] retain]];
+  }
+  if ([[rootObject objectForKey:@"Nouns"] count] > 0){
+    [self setNounSynonyms:[[rootObject objectForKey:@"Nouns"] retain]];
+  }
+  if ([[rootObject objectForKey:@"Verbs"] count] > 0){
+    [self setVerbSynonyms:[[rootObject objectForKey:@"Verbs"] retain]];
+  }
 }
 
 - (BOOL)nSynonymous:(NSString *)p1 with:(NSString *)p2 {
@@ -456,19 +475,19 @@ n_synonyms.save()
   BOOL p2Main = NO;
   NSString *fullVerbName;
   NSLog(@"Setting vsynonyms: %@, %@", p1, p2);
-  for (NSString *verb in possibleActions){
-    NSString *lVerb = [self makeLowercaseAndPunctuationFree:[verb lowercaseString]];
+  for (NSString *v in possibleActions){
+    NSString *lVerb = [self makeLowercaseAndPunctuationFree:[v lowercaseString]];
     //NSLog(@"Checking against: %@", lNoun);
     //if ([p1 isEqualToString:@"firefox.app"])
     //NSLog(@"found ff");
     if ([p1 isEqualToString:lVerb]){
       NSLog(@"p1 is equal to vb");
-      fullVerbName = verb;
+      fullVerbName = v;
       p1Main = YES;
     }
     if ([p2 isEqualToString:lVerb]){
       NSLog(@"p2 is equal to vb");
-      fullVerbName = verb;
+      fullVerbName = v;
       p2Main = YES;
     }
   }
