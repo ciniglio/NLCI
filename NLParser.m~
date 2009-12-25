@@ -132,10 +132,10 @@ andWithPossibleActions:(NSMutableArray *)pActions{
         NSInteger numActions = [actions count];
 	NSInteger numVerbs = [verbs count];
 	NSLog(@"verbSynCount: %d", [verbSynonyms count]);
-        NSLog(@"ActionCount: %d", [actions count]);
+        NSLog(@"ACount: %d, vcount: %d", [verbs count], [actions count]);
         // iterate through each possible action
-        for (i=0;i < [actions count]; i++){
-                NSString *actName = [actions objectAtIndex:i];
+        for (i=0;i < numVerbs; i++){
+                NSString *actName = [verbs objectAtIndex:i];
                 NSString *act = [[self makeLowercaseAndPunctuationFree:actName] retain];
                 NSArray *actionParts = [act componentsSeparatedByString:@" "];
                 NSString *mainAct = [actionParts objectAtIndex:0]; // assumes the verb is the first word in the action
@@ -153,10 +153,10 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                         }
                 }
         }
-	if ([verbSynonyms objectForKey:action] != nil){
-	  [self setTrueAction:[verbSynonyms objectForKey:action]];
-	} else {
-	  [self setTrueAction:action];
+	if (ret > numActions - 1){
+	  trueAction = [verbSynonyms objectForKey:action];
+	  NSLog(@"Used synonym! -- %@", trueAction);
+	  ret = [actions indexOfObject:trueAction];
 	}
         NSLog(@"Actionscore email: %f", [self getMatchScoreUsing:@"email"]);
         NSLog(@"Actionscore email with: %f", [self getMatchScoreUsing:@"email with"]);
@@ -291,8 +291,6 @@ if n in n_synonyms.keys:
 
 - (BOOL) handleSynonyms {
   [self unarchiveDicts];
-  [nounSynonyms setObject:@"obj" forKey:@"key"];
-  NSLog(@"trial %@", [nounSynonyms objectForKey:@"key"]);
   NSLog(@"Number of nounSynonyms: %d", [nounSynonyms count]);
   NSLog(@"Number of verbSynonyms: %d", [verbSynonyms count]);
   NSArray *parts = [raw componentsSeparatedByString:@"is"];
@@ -345,6 +343,7 @@ if n in n_synonyms.keys:
   rootObject = [[NSMutableDictionary alloc] initWithCapacity:3];
   NSMutableDictionary *tester = [[NSMutableDictionary alloc] initWithCapacity:1];
   [tester setObject:@"ale" forKey:@"susan"];
+  NSLog(@"tester: %@", [tester objectForKey:@"susan"]);
   [rootObject setValue:tester forKey:@"test"];
   [rootObject setValue:[self nounSynonyms] forKey:@"Nouns"];
   [rootObject setValue:[self verbSynonyms] forKey:@"Verbs"];
@@ -356,9 +355,15 @@ if n in n_synonyms.keys:
   NSDictionary *rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
   NSLog(@"unarchive ncount: %d", [[rootObject objectForKey:@"Nouns"] count]);
   NSLog(@"unarchive totalCount: %d", [rootObject count]);
-  [self setNounSynonyms:[[rootObject objectForKey:@"test"] retain]];
-  [self setNounSynonyms:[[rootObject objectForKey:@"Nouns"] retain]];
-  [self setVerbSynonyms:[[rootObject objectForKey:@"Verbs"] retain]];
+  if ([[rootObject objectForKey:@"test"] count] > 0){
+    [self setNounSynonyms:[[rootObject objectForKey:@"test"] retain]];
+  }
+  if ([[rootObject objectForKey:@"Nouns"] count] > 0){
+    [self setNounSynonyms:[[rootObject objectForKey:@"Nouns"] retain]];
+  }
+  if ([[rootObject objectForKey:@"Verbs"] count] > 0){
+    [self setVerbSynonyms:[[rootObject objectForKey:@"Verbs"] retain]];
+  }
 }
 
 - (BOOL)nSynonymous:(NSString *)p1 with:(NSString *)p2 {

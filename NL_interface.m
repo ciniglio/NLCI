@@ -95,7 +95,7 @@
 	
 	[dSelector performSearchFor:[nlp directObject] from:dSelector];
 	[self updateActionsNow];
-	[aSelector performSearchFor:[nlp action] from:aSelector];
+	[aSelector performSearchFor:[nlp trueAction] from:aSelector];
 	[self updateIndirectObjects];
 	if ([[nlp indirectObject] length] > 0){
 	  [iSelector performSearchFor:[nlp indirectObject] from:iSelector];

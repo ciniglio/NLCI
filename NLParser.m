@@ -37,7 +37,7 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                 verbSynonyms = [[NSMutableDictionary alloc] initWithCapacity:10];
                 possibleNouns = [pNouns retain];
                 possibleActions = [pActions retain];
-		possibleVerbs = [pActions retain];
+		possibleVerbs = [[NSMutableArray alloc] initWithArray:[pActions retain]];
                 [self setActionLocation:-1];
                 action = nil;
                 actionRemainder = nil;
@@ -132,10 +132,10 @@ andWithPossibleActions:(NSMutableArray *)pActions{
         NSInteger numActions = [actions count];
 	NSInteger numVerbs = [verbs count];
 	NSLog(@"verbSynCount: %d", [verbSynonyms count]);
-        NSLog(@"ActionCount: %d", [actions count]);
+        NSLog(@"ACount: %d, vcount: %d", [verbs count], [actions count]);
         // iterate through each possible action
-        for (i=0;i < [actions count]; i++){
-                NSString *actName = [actions objectAtIndex:i];
+        for (i=0;i < numVerbs; i++){
+                NSString *actName = [verbs objectAtIndex:i];
                 NSString *act = [[self makeLowercaseAndPunctuationFree:actName] retain];
                 NSArray *actionParts = [act componentsSeparatedByString:@" "];
                 NSString *mainAct = [actionParts objectAtIndex:0]; // assumes the verb is the first word in the action
@@ -153,10 +153,10 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                         }
                 }
         }
-	if ([verbSynonyms objectForKey:action] != nil){
-	  [self setTrueAction:[verbSynonyms objectForKey:action]];
-	} else {
-	  [self setTrueAction:action];
+	if (ret > numActions - 1){
+	  trueAction = [verbSynonyms objectForKey:action];
+	  NSLog(@"Used synonym! -- %@", trueAction);
+	  ret = [actions indexOfObject:trueAction];
 	}
         NSLog(@"Actionscore email: %f", [self getMatchScoreUsing:@"email"]);
         NSLog(@"Actionscore email with: %f", [self getMatchScoreUsing:@"email with"]);
