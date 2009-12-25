@@ -321,13 +321,13 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E6C2BC2A10E4EB8000320C16</string>
+										<string>E6C2BC8510E4FD1600320C16</string>
 										<key>history</key>
 										<array>
 											<string>E6C2B92110E1FABC00320C16</string>
 											<string>E6C2BA5A10E39FCF00320C16</string>
 											<string>E6C2BBFF10E4CFB500320C16</string>
-											<string>E6C2BC0010E4CFB500320C16</string>
+											<string>E6C2BC6710E4FA5600320C16</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -648,7 +648,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E6C2BC2B10E4EB8000320C16</string>
+		<string>E6C2BC8610E4FD1600320C16</string>
 		<string>E6C2B8F310E0DFC700320C16</string>
 		<string>E6C2B8F410E0DFC700320C16</string>
 		<string>/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj</string>

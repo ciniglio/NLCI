@@ -157,6 +157,8 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 	  trueAction = [verbSynonyms objectForKey:action];
 	  NSLog(@"Used synonym! -- %@", trueAction);
 	  ret = [actions indexOfObject:trueAction];
+	} else {
+	  trueAction = action;
 	}
         NSLog(@"Actionscore email: %f", [self getMatchScoreUsing:@"email"]);
         NSLog(@"Actionscore email with: %f", [self getMatchScoreUsing:@"email with"]);
@@ -185,6 +187,7 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 - (void)setObjectsWithIndirect:(BOOL)indirect {
         if (indirect) {
                 if (prepositionLocation > 0) {
+   		        NSLog(@"ind and prep");
                         NSArray *rawArray = [raw componentsSeparatedByString:@" "];
                         NSRange doRange;
                         NSString *mainAct = [[action componentsSeparatedByString:@" "] objectAtIndex:0];
@@ -208,7 +211,7 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                 }
         
                 else {
-                  NSLog(@"No preposition");
+                  NSLog(@"ind and No preposition");
                   [self doubleObjectParser];
                 }
         }
@@ -233,14 +236,16 @@ if n in nouns:
 if n in n_synonyms.keys:
    return n_synonyms[n]
    error "$n not found" */
-        for(NSString *noun in possibleNouns){
-                noun = [noun lowercaseString];
-                if ([n isEqualToString:noun]) return noun;
-                }
+  NSLog(@"Noun match with %@", n);
+  for(NSString *noun in possibleNouns){
+    noun = [noun lowercaseString];
+    if ([n isEqualToString:noun]){
+      NSLog(@"Found Noun: %@", noun);
+      return noun;
+    }
+  }
         //      if ([nounSynonyms valueForKey:n]) return [nounSynonyms valueForKey:n];
-        return @"";
-
-
+  return @"";
 }
 
 - (BOOL)doubleObjectParser{
@@ -262,30 +267,35 @@ if n in n_synonyms.keys:
                             break
                     if (!found) error "please specify more stuff"
 */
-        NSArray *inWords = [actionRemainder componentsSeparatedByString:@" "];
-        int len = [[actionRemainder componentsSeparatedByString:@" "] count];
-        int i = 0; int j = 0;
-        NSMutableString *part1 = [[NSMutableString alloc] initWithString:@""];
-        NSMutableString *part2 = [[NSMutableString alloc] initWithString:@""];
-        for (i = 0; i < len; i++){
-             [part1 appendString:(@" %@", [inWords objectAtIndex:i])];
-			 part1 = (NSMutableString *) [self cleanupWhitespaceIn:part1];
-        }
-             
-             for (j = i; j < len; j++){
-                 [part2 appendString:(@" %@", [inWords objectAtIndex:j])];
-                 part2 = (NSMutableString *) [self cleanupWhitespaceIn:part2];
-             }
-             if ([part1 length] && [part2 length]){
-                      // part1 = [self nounMatch:part1];
-                      // part2 = [self nounMatch:part2];
-                      directObject = part2;
-                      indirectObject = part1;
-                      return YES;
-             }
-        
-        return NO;
-        
+  NSArray *inWords = [actionRemainder componentsSeparatedByString:@" "];
+  int len = [[actionRemainder componentsSeparatedByString:@" "] count];
+  NSLog(@"Action remainder len: %d", len);
+  int i = 0; int j = 0;
+  NSMutableString *part1 = [[NSMutableString alloc] initWithString:@""];
+  NSMutableString *part2 = [[NSMutableString alloc] initWithString:@""];
+  for (i = 0; i < len; i++){
+    [part1 appendFormat:@" %@", [inWords objectAtIndex:i]];
+    NSString *tmp = part1;
+    [part1 setString:[self cleanupWhitespaceIn:tmp]];
+    NSLog(@"part1 : %@", part1);
+    [part2 setString:@""];
+    for (j = i + 1; j < len; j++){
+      [part2 appendFormat:@" %@", [inWords objectAtIndex:j]];
+      tmp = part2;
+      [part2 setString:[self cleanupWhitespaceIn:tmp]];
+      NSLog(@"part2 : %@", part2);
+      NSString *match1 = [self nounMatch:part1];
+      NSString *match2 = [self nounMatch:part2];
+      if ([match1 length] && [match2 length]){
+	directObject = part2;
+	indirectObject = part1;
+	return YES;
+      }
+    }
+  }
+  
+  return NO;
+  
 
 }
 

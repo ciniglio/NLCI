@@ -93,8 +93,10 @@
 	[self clearSearchFor:[self aSelector]];
 	[self clearSearchFor:[self iSelector]];
 	
+	NSLog(@"Directobj for search: %@", [nlp directObject]);
 	[dSelector performSearchFor:[nlp directObject] from:dSelector];
 	[self updateActionsNow];
+	NSLog(@"trueAction for search: %@", [nlp trueAction]);
 	[aSelector performSearchFor:[nlp trueAction] from:aSelector];
 	[self updateIndirectObjects];
 	if ([[nlp indirectObject] length] > 0){
