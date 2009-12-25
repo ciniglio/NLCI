@@ -24,7 +24,7 @@
 	NSMutableDictionary *verbSynonyms;
 	NSMutableArray *possibleActions;
 
-	int actionLocation;
+	NSInteger actionLocation;
 	int directObjectLocation;
 	int prepositionLocation;
 	int indirectObjectLocation;
@@ -45,7 +45,7 @@
 @property (nonatomic, retain) NSMutableArray *possibleActions;
 
 
-@property int actionLocation;
+@property (nonatomic, assign) NSInteger actionLocation;
 @property int directObjectLocation;
 @property int prepositionLocation;
 @property int indirectObjectLocation;

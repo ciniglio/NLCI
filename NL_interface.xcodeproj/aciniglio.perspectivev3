@@ -310,7 +310,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>E6E3A7DC10AA854F00C83986</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>asm objc_msgSend  0x93403ec0</string>
+								<string>NLParser.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -318,17 +318,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>E6E3A7DD10AA854F00C83986</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>asm objc_msgSend  0x93403ec0</string>
+										<string>NLParser.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E6C2BA5410E39E9200320C16</string>
+										<string>E6C2BB4710E47F8000320C16</string>
 										<key>history</key>
 										<array>
-											<string>E6C2B92010E1FABC00320C16</string>
 											<string>E6C2B92110E1FABC00320C16</string>
-											<string>E6C2B92F10E1FCB600320C16</string>
-											<string>E6C2B9FC10E23D2F00320C16</string>
+											<string>E6C2BA5A10E39FCF00320C16</string>
+											<string>E6C2BB4510E47F7900320C16</string>
+											<string>E6C2BB3F10E47F3900320C16</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -504,14 +504,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {1116, 102}}</string>
+						<string>{{0, 0}, {1116, 160}}</string>
 						<key>RubberWindowFrame</key>
 						<string>290 160 1116 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
 					<key>Proportion</key>
-					<string>102pt</string>
+					<string>160pt</string>
 				</dict>
 				<dict>
 					<key>ContentConfiguration</key>
@@ -530,8 +530,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {545, 195}}</string>
-									<string>{{545, 0}, {571, 195}}</string>
+									<string>{{0, 0}, {545, 175}}</string>
+									<string>{{545, 0}, {571, 175}}</string>
 								</array>
 							</dict>
 							<key>VerticalSplitView</key>
@@ -546,8 +546,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {1116, 195}}</string>
-									<string>{{0, 195}, {1116, 375}}</string>
+									<string>{{0, 0}, {1116, 175}}</string>
+									<string>{{0, 175}, {1116, 337}}</string>
 								</array>
 							</dict>
 						</dict>
@@ -567,7 +567,7 @@
 						<key>DebugSTDIOWindowFrame</key>
 						<string>{{200, 200}, {500, 300}}</string>
 						<key>Frame</key>
-						<string>{{0, 107}, {1116, 570}}</string>
+						<string>{{0, 165}, {1116, 512}}</string>
 						<key>PBXDebugSessionStackFrameViewKey</key>
 						<dict>
 							<key>DebugVariablesTableConfiguration</key>
@@ -580,7 +580,7 @@
 								<real>341</real>
 							</array>
 							<key>Frame</key>
-							<string>{{545, 0}, {571, 195}}</string>
+							<string>{{545, 0}, {571, 175}}</string>
 							<key>RubberWindowFrame</key>
 							<string>290 160 1116 718 0 0 1440 878 </string>
 						</dict>
@@ -590,7 +590,7 @@
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
 					<key>Proportion</key>
-					<string>570pt</string>
+					<string>512pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -649,7 +649,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E6C2BA5510E39E9200320C16</string>
+		<string>E6C2BB4810E47F8000320C16</string>
 		<string>E6C2B8F310E0DFC700320C16</string>
 		<string>E6C2B8F410E0DFC700320C16</string>
 		<string>/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj</string>

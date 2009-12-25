@@ -22,6 +22,9 @@
 @synthesize nounSynonyms;
 @synthesize verbSynonyms;
 
+@synthesize possibleNouns;
+@synthesize possibleActions;
+
 -(id)initWithRaw:(NSString *)rawInput 
 withPossibleNouns:(NSMutableArray *)pNouns
 andWithPossibleActions:(NSMutableArray *)pActions{
@@ -32,7 +35,7 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 		verbSynonyms = [[NSMutableDictionary dictionary] retain];
 		possibleNouns = [pNouns retain];
 		possibleActions = [pActions retain];
-		actionLocation = -1;
+		[self setActionLocation:-1];
 		action = nil;
 		actionRemainder = nil;
 		verb = nil;
@@ -57,8 +60,10 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 }
 
 -(float)actionProbable{
+        NSLog(@"started actionProbable");
         int correct = 0;
 	NSArray *parts = [[self makeLowercaseAndPunctuationFree:action] componentsSeparatedByString:@" "];
+	
 	int possible = [parts count];
 	for (NSString *part in parts){
 	         //
@@ -122,26 +127,29 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 	// iterate through each possible action
 	for (i=0;i < [actions count]; i++){
                 NSString *actName = [actions objectAtIndex:i];
-	        NSString *act = [self makeLowercaseAndPunctuationFree:actName];
+	        NSString *act = [[self makeLowercaseAndPunctuationFree:actName] retain];
 		NSArray *actionParts = [act componentsSeparatedByString:@" "];
 		NSString *mainAct = [actionParts objectAtIndex:0]; // assumes the verb is the first word in the action
 		NSRange range = [raw rangeOfString:mainAct];
+
 		if ([self getMatchScoreUsing:act] > bestScore && range.location != NSNotFound) {
 		        if (range.location <= min){
         			ret = i;
-				action = actName;
-				verb = mainAct;
+				action = [actName retain];
+				verb = [mainAct retain];
 				min = range.location;
 				actionLocation = min;	
 				bestScore = [self getMatchScoreUsing:act];
-				actionRemainder = [self cleanupWhitespaceIn:[raw substringFromIndex:(min + [mainAct length])]];
+				actionRemainder = [[self cleanupWhitespaceIn:[raw substringFromIndex:(min + [mainAct length])]] retain];
 			}
 		}
 	}
 	NSLog(@"ActionLocation : %d", actionLocation);
 	NSLog(@"Action remainder: %@", actionRemainder);
-	if ([self actionProbable] > .7)
-	        return ret;
+	if ([self actionProbable] > .7){
+	  NSLog(@"actionprobable done");
+	  return ret;
+	}
 	return -1;
 }
 
@@ -163,8 +171,18 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 		if (prepositionLocation > 0) {
 			NSArray *rawArray = [raw componentsSeparatedByString:@" "];
 			NSRange doRange;
-			doRange.location = actionLocation + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length];
+			NSString *mainAct = [[action componentsSeparatedByString:@" "] objectAtIndex:0];
+			NSInteger mainActLength = [mainAct length];
+			NSInteger actionLoc = actionLocation;
+			NSInteger four = 4; int z = 0;
+			NSLog(@"suspicious: %d", four + z);
+
+			NSLog(@"sowi: actionLoc: %d", [self actionLocation] + mainActLength);
+			doRange.location = actionLocation + mainActLength;
+			NSLog(@"sowi: doRangeLoc: %d", doRange.location);
+			NSLog(@"sowi: prerpLoc: %d", prepositionLocation);
 			doRange.length = prepositionLocation - doRange.location;
+			NSLog(@"sowi: doranglen: %d", doRange.length);
 			directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];//[[rawArray subarrayWithRange:doRange] componentsJoinedByString:@""];
 			directObjectLocation = doRange.location + 1;
 			
@@ -270,6 +288,11 @@ if n in n_synonyms.keys:
 			   with:cleanPart2];
   [self archiveDicts];
   return (noun || verb);
+}
+
+- (void) parseVerbSynonyms {
+  NSString *targetString = [raw substringToIndex:actionLocation];
+  NSLog (@"target: %@", targetString);
 }
 
 - (NSString *) pathForSynonymsDataFile

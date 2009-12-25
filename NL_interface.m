@@ -74,11 +74,14 @@
 	}
 	int likelyIndex = [nlp getMostLikelyAction];
 	QSAction *likelyAction = [possibleActions objectAtIndex:likelyIndex];
+	//	[nlp parseVerbSynonyms];
 	BOOL indirect = [likelyAction argumentCount] == 1 ? NO : YES;
 	[nlp findAndSetPreposition];
 	[nlp setObjectsWithIndirect:indirect];
-
+	NSLog(@"past LA2");
 	// Logging
+	NSLog(@"Most Likely: %@ ", [likelyAction name]);
+	NSLog(@"Most Likely: %@, %@", [likelyAction name], [nlp actionLocation]);
 	NSLog(@"Most Likely: %@, %@, %d", [likelyAction name], [nlp actionLocation], [likelyAction argumentCount]);
 	NSLog(@"Preposition: %@", [nlp preposition]);
 	NSLog(@"DO: %@ // IO: %@", [nlp directObject], [nlp indirectObject]);
