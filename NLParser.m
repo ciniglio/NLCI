@@ -64,19 +64,20 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 }
 
 -(float)actionProbable{
-        NSLog(@"started actionProbable");
-        int correct = 0;
-        NSArray *parts = [[self makeLowercaseAndPunctuationFree:action] componentsSeparatedByString:@" "];
-        
-        int possible = [parts count];
-        for (NSString *part in parts){
-                 //
-                 NSRange range = [raw rangeOfString:part];
-                 if (range.location != NSNotFound) {
-                   correct++;
-                 }
-        }
-        return ((float) correct) / ((float) possible);
+  NSLog(@"started actionProbable: %@", action);
+  int correct = 0;
+  NSString *cleanAction = [self cleanupWhitespaceIn:[self makeLowercaseAndPunctuationFree:action]];
+  NSArray *parts = [cleanAction componentsSeparatedByString:@" "];
+  
+  int possible = [parts count];
+  for (NSString *part in parts){
+    NSRange range = [raw rangeOfString:part];
+    if (range.location != NSNotFound) {
+      correct++;
+    }
+  }
+  NSLog(@"out of actionProbable loop");
+  return ((float) correct) / ((float) possible);
 }
 
 // Method that scores the similiarity of a string to $raw
@@ -86,14 +87,17 @@ andWithPossibleActions:(NSMutableArray *)pActions{
         int rawTotal = [[raw componentsSeparatedByString:@" "] count];
         int matchTotal = [[match componentsSeparatedByString:@" "] count];
         NSArray *parts = [[self makeLowercaseAndPunctuationFree:match] componentsSeparatedByString:@" "];
+	NSArray *rawParts = [[self makeLowercaseAndPunctuationFree:raw] componentsSeparatedByString:@" "];
         for (NSString *part in parts){
                  //NSLog(@"Scoring %@", part);
                  NSRange range = [raw rangeOfString:part];
-                 if (range.location != NSNotFound) {
+                 if ([rawParts containsObject:part]) {
                    //      NSLog(@"Found: %@", part);
                    correct++;
                  }
         }
+	NSLog(@"getMatchScoreUsing:%@ -- %f", match, ((float) correct) / (((float) rawTotal + (float) matchTotal)));
+	NSLog(@"\t correct:  %d", correct);
         return ((float) correct) / (((float) rawTotal + (float) matchTotal));
 }
 
@@ -200,13 +204,15 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                         NSLog(@"sowi: prerpLoc: %d", prepositionLocation);
                         doRange.length = prepositionLocation - doRange.location;
                         NSLog(@"sowi: doranglen: %d", doRange.length);
-                        directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
+			NSString *possibleDO = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
+                        directObject = [self nounMatch:possibleDO];
                         directObjectLocation = doRange.location + 1;
                         
                         NSRange ioRange;
                         ioRange.location = prepositionLocation + [preposition length];
                         ioRange.length = [raw length] - ioRange.location;
-                        indirectObject = [self cleanupWhitespaceIn:[raw substringWithRange:ioRange]];
+			NSString *possibleIO = [self cleanupWhitespaceIn:[raw substringWithRange:ioRange]];
+                        indirectObject = [self nounMatch:possibleIO];
                         indirectObjectLocation = ioRange.location + 1;
                 }
         
@@ -216,7 +222,8 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                 }
         }
         else {
-          directObject = [self cleanupWhitespaceIn:actionRemainder];
+	  NSString *possibleDO = [self cleanupWhitespaceIn:actionRemainder];
+          directObject = [self nounMatch:possibleDO];
           directObjectLocation = actionLocation 
                                + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length] 
                                + 1;
@@ -243,6 +250,9 @@ if n in n_synonyms.keys:
       NSLog(@"Found Noun: %@", noun);
       return noun;
     }
+  }
+  if([nounSynonyms objectForKey:n] != nil){
+    return [nounSynonyms objectForKey:n];
   }
         //      if ([nounSynonyms valueForKey:n]) return [nounSynonyms valueForKey:n];
   return @"";
