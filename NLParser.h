@@ -16,8 +16,10 @@
 	NSString *actionRemainder;
 	NSString *verb;
 	NSString *directObject;
+	NSMutableArray *directObjects;
 	NSString *preposition;
 	NSString *indirectObject;
+	NSMutableArray *indirectObjects;
 	
 	NSMutableDictionary *nounSynonyms;
 	NSMutableArray *possibleNouns;
@@ -40,6 +42,8 @@
 @property (nonatomic, copy) NSString *directObject;
 @property (nonatomic, copy) NSString *preposition;
 @property (nonatomic, copy) NSString *indirectObject;
+@property (nonatomic, retain) NSMutableArray *directObjects;
+@property (nonatomic, retain) NSMutableArray *indirectObjects;
 	
 @property (nonatomic, retain) NSMutableDictionary *nounSynonyms;
 @property (nonatomic, retain) NSMutableArray *possibleNouns;

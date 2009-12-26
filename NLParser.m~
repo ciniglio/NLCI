@@ -17,6 +17,8 @@
 @synthesize directObject;
 @synthesize preposition;
 @synthesize indirectObject;
+@synthesize directObjects;
+@synthesize indirectObjects;
 
 @synthesize actionLocation;
 @synthesize directObjectLocation;
@@ -27,7 +29,7 @@
 @synthesize possibleActions;
 @synthesize possibleVerbs;
 
--(id)initWithRaw:(NSString *)rawInput 
+- (id)initWithRaw:(NSString *)rawInput 
 withPossibleNouns:(NSMutableArray *)pNouns
 andWithPossibleActions:(NSMutableArray *)pActions{
         self = [super init];
@@ -49,6 +51,8 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                 preposition = nil;
                 indirectObjectLocation = -1;
                 indirectObject = nil;
+		directObjects = [[NSMutableArray alloc] initWithCapacity:1];
+		indirectObjects = [[NSMutableArray alloc] initWithCapacity:1];
                 NSLog(@"NLParser initialized w/ raw: %@", raw);
                 
         }
@@ -64,19 +68,20 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 }
 
 -(float)actionProbable{
-        NSLog(@"started actionProbable");
-        int correct = 0;
-        NSArray *parts = [[self makeLowercaseAndPunctuationFree:action] componentsSeparatedByString:@" "];
-        
-        int possible = [parts count];
-        for (NSString *part in parts){
-                 //
-                 NSRange range = [raw rangeOfString:part];
-                 if (range.location != NSNotFound) {
-                   correct++;
-                 }
-        }
-        return ((float) correct) / ((float) possible);
+  NSLog(@"started actionProbable: %@", action);
+  int correct = 0;
+  NSString *cleanAction = [self cleanupWhitespaceIn:[self makeLowercaseAndPunctuationFree:action]];
+  NSArray *parts = [cleanAction componentsSeparatedByString:@" "];
+  
+  int possible = [parts count];
+  for (NSString *part in parts){
+    NSRange range = [raw rangeOfString:part];
+    if (range.location != NSNotFound) {
+      correct++;
+    }
+  }
+  NSLog(@"out of actionProbable loop");
+  return ((float) correct) / ((float) possible);
 }
 
 // Method that scores the similiarity of a string to $raw
@@ -86,14 +91,17 @@ andWithPossibleActions:(NSMutableArray *)pActions{
         int rawTotal = [[raw componentsSeparatedByString:@" "] count];
         int matchTotal = [[match componentsSeparatedByString:@" "] count];
         NSArray *parts = [[self makeLowercaseAndPunctuationFree:match] componentsSeparatedByString:@" "];
+	NSArray *rawParts = [[self makeLowercaseAndPunctuationFree:raw] componentsSeparatedByString:@" "];
         for (NSString *part in parts){
                  //NSLog(@"Scoring %@", part);
                  NSRange range = [raw rangeOfString:part];
-                 if (range.location != NSNotFound) {
+                 if ([rawParts containsObject:part]) {
                    //      NSLog(@"Found: %@", part);
                    correct++;
                  }
         }
+	NSLog(@"getMatchScoreUsing:%@ -- %f", match, ((float) correct) / (((float) rawTotal + (float) matchTotal)));
+	NSLog(@"\t correct:  %d", correct);
         return ((float) correct) / (((float) rawTotal + (float) matchTotal));
 }
 
@@ -200,13 +208,15 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                         NSLog(@"sowi: prerpLoc: %d", prepositionLocation);
                         doRange.length = prepositionLocation - doRange.location;
                         NSLog(@"sowi: doranglen: %d", doRange.length);
-                        directObject = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
+			NSString *possibleDO = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
+                        directObject = [self nounMatch:possibleDO];
                         directObjectLocation = doRange.location + 1;
                         
                         NSRange ioRange;
                         ioRange.location = prepositionLocation + [preposition length];
                         ioRange.length = [raw length] - ioRange.location;
-                        indirectObject = [self cleanupWhitespaceIn:[raw substringWithRange:ioRange]];
+			NSString *possibleIO = [self cleanupWhitespaceIn:[raw substringWithRange:ioRange]];
+                        indirectObject = [self nounMatch:possibleIO];
                         indirectObjectLocation = ioRange.location + 1;
                 }
         
@@ -216,12 +226,42 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                 }
         }
         else {
-          directObject = [self cleanupWhitespaceIn:actionRemainder];
+	  NSString *cleanActionRemainder = [self cleanupWhitespaceIn:actionRemainder];
+
+	  NSString *possibleDO = cleanActionRemainder;
+          directObject = [self findNounsIn:possibleDO];
           directObjectLocation = actionLocation 
                                + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length] 
                                + 1;
         }
 
+}
+
+- (NSString *)findNounsIn:(NSString *)n{
+  NSLog(@"findNounsIn %@", n);
+  NSArray *parts = [n componentsSeparatedByString:@","];
+  NSInteger numParts = [parts count];
+  NSInteger i;
+	NSString *possibleDO;
+  for (i=0; i < numParts; i++){
+    NSString *toCheck = [self cleanupWhitespaceIn:[parts objectAtIndex:i]];
+    possibleDO = toCheck;
+    if (i == numParts - 1){
+      NSLog(@"Last part: %@", toCheck);
+      NSArray *andParts = [toCheck componentsSeparatedByString:@"and"];
+      NSRange andRemainder;
+      andRemainder.location = 1;
+      andRemainder.length = [andParts count] - 1;
+      possibleDO = [[andParts subarrayWithRange:andRemainder] componentsJoinedByString:@" "];
+    }
+    if ([[self nounMatch:possibleDO] length] > 0){
+      NSLog(@"Matched: %@", possibleDO);
+      [directObjects addObject:[self nounMatch:possibleDO]];
+      continue;
+    }
+    return @"";
+  }
+  return possibleDO;
 }
 
 - (NSString *)nounMatch:(NSString *)n{
@@ -243,6 +283,9 @@ if n in n_synonyms.keys:
       NSLog(@"Found Noun: %@", noun);
       return noun;
     }
+  }
+  if([nounSynonyms objectForKey:n] != nil){
+    return [nounSynonyms objectForKey:n];
   }
         //      if ([nounSynonyms valueForKey:n]) return [nounSynonyms valueForKey:n];
   return @"";
@@ -275,19 +318,18 @@ if n in n_synonyms.keys:
   NSMutableString *part2 = [[NSMutableString alloc] initWithString:@""];
   for (i = 0; i < len; i++){
     [part1 appendFormat:@" %@", [inWords objectAtIndex:i]];
-	  NSString *tmp = part1;
+    NSString *tmp = part1;
     [part1 setString:[self cleanupWhitespaceIn:tmp]];
     NSLog(@"part1 : %@", part1);
     [part2 setString:@""];
-    for (j = i; j < len; j++){
+    for (j = i + 1; j < len; j++){
       [part2 appendFormat:@" %@", [inWords objectAtIndex:j]];
       tmp = part2;
       [part2 setString:[self cleanupWhitespaceIn:tmp]];
-      tmp = part1;
-      [part1 setString:[self nounMatch:tmp]];
-      tmp = part2;
-      [part2 setString:[self nounMatch:tmp]];
-      if ([part1 length] && [part2 length]){
+      NSLog(@"part2 : %@", part2);
+      NSString *match1 = [self nounMatch:part1];
+      NSString *match2 = [self nounMatch:part2];
+      if ([match1 length] && [match2 length]){
 	directObject = part2;
 	indirectObject = part1;
 	return YES;
