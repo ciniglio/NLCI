@@ -93,15 +93,14 @@
 	[self clearSearchFor:[self aSelector]];
 	[self clearSearchFor:[self iSelector]];
 	
-	NSLog(@"Directobj for search: %@", [nlp directObject]);
-	[dSelector performSearchFor:[nlp directObject] from:dSelector];
-	
-
-	// [dSelector collect:dSelector];
-       	// [dSelector clearSearch];
-       	// [dSelector clearAll]; //***
+	for (NSString *dObj in [nlp directObjects]){
+	  NSLog(@"Directobj for search: %@",  dObj);
+	  [dSelector collect:dSelector];
+	  [dSelector clearSearch];
+	  [dSelector clearAll];
+	  [dSelector performSearchFor:dObj from:dSelector]; //***
 	// [dSelector performSearchFor:@"mail.app" from:dSelector];
-	
+	}
 
 	[self updateActionsNow];
 	NSLog(@"trueAction for search: %@", [nlp trueAction]);
