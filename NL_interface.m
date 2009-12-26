@@ -107,7 +107,15 @@
 	[aSelector performSearchFor:[nlp trueAction] from:aSelector];
 	[self updateIndirectObjects];
 	if ([[nlp indirectObject] length] > 0){
-	  [iSelector performSearchFor:[nlp indirectObject] from:iSelector];
+	  //[iSelector performSearchFor:[nlp indirectObject] from:iSelector];
+	  for (NSString *iObj in [nlp indirectObjects]){
+	    NSLog(@"indirectobj for search: %@",  iObj);
+	    [iSelector collect:iSelector];
+	    [iSelector clearSearch];
+	    [iSelector clearAll];
+	    [iSelector performSearchFor:iObj from:iSelector]; //***
+	    // [dSelector performSearchFor:@"mail.app" from:dSelector];
+	  }
 	}
 }
 
