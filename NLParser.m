@@ -364,13 +364,15 @@ if n in n_synonyms.keys:
       tmp = part2;
       [part2 setString:[self cleanupWhitespaceIn:tmp]];
       NSLog(@"part2 : %@", part2);
-      NSString *match1 = [self nounMatch:part1];
-      NSString *match2 = [self nounMatch:part2];
+      NSString *match1 = [self findIONounsIn:part1];
+      NSString *match2 = [self findDONounsIn:part2];
       if ([match1 length] && [match2 length]){
 	directObject = part2;
 	indirectObject = part1;
 	return YES;
       }
+      [directObjects removeAllObjects];
+      [indirectObjects removeAllObjects];
     }
   }
   

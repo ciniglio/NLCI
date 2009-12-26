@@ -247,11 +247,11 @@ andWithPossibleActions:(NSMutableArray *)pActions{
     NSString *toCheck = [self cleanupWhitespaceIn:[parts objectAtIndex:i]];
     if (i == numParts - 1 ){
       NSLog(@"Last part: %@", toCheck);
-      NSArray *andParts = [toCheck componentsSeparatedByString:@" and "];
+      NSArray *andParts = [toCheck componentsSeparatedByString:@"and"];
       NSRange andRemainder;
       //NSRange andLocation = [toCheck rangeOfString:@" and "
-      andRemainder.location = ([andParts count] == 1 ? 0 : 1);
-      andRemainder.length = ([andParts count] == 1 ? [andParts count]:[andParts count] - 1);
+      andRemainder.location = (numParts == 1 ? 0 : 1);
+      andRemainder.length = (numParts == 1 ? [andParts count]:[andParts count] - 1);
       NSLog(@"number of and:: %d", [andParts count]);
       toCheck = [[andParts subarrayWithRange:andRemainder] componentsJoinedByString:@"and"];
       toCheck = [self cleanupWhitespaceIn:toCheck];
@@ -279,10 +279,10 @@ andWithPossibleActions:(NSMutableArray *)pActions{
     NSString *toCheck = [self cleanupWhitespaceIn:[parts objectAtIndex:i]];
     if (i == numParts - 1){
       NSLog(@"Last part: %@", toCheck);
-      NSArray *andParts = [toCheck componentsSeparatedByString:@" and "];
+      NSArray *andParts = [toCheck componentsSeparatedByString:@"and"];
       NSRange andRemainder;
-      andRemainder.location = ([andParts count] == 1 ? 0 : 1);
-      andRemainder.length = ([andParts count] == 1 ? [andParts count]:[andParts count] - 1);
+      andRemainder.location = (numParts == 1 ? 0 : 1);
+      andRemainder.length = (numParts == 1 ? [andParts count]:[andParts count] - 1);
       //andRemainder.location = 1;
       //andRemainder.length = [andParts count] - 1;
       NSLog(@"number of and:: %d", [andParts count]);
@@ -364,13 +364,15 @@ if n in n_synonyms.keys:
       tmp = part2;
       [part2 setString:[self cleanupWhitespaceIn:tmp]];
       NSLog(@"part2 : %@", part2);
-      NSString *match1 = [self nounMatch:part1];
-      NSString *match2 = [self nounMatch:part2];
+      NSString *match1 = [self findIONounsIn:part1];
+      NSString *match2 = [self findDONounsIn:part2];
       if ([match1 length] && [match2 length]){
 	directObject = part2;
 	indirectObject = part1;
 	return YES;
       }
+      [directObjects removeAllObjects];
+		[indirectObjects removeAllObjects];
     }
   }
   

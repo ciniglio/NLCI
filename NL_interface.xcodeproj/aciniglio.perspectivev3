@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -294,6 +294,8 @@
 							<string>MainColumn</string>
 							<real>185</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>290 160 1116 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -304,6 +306,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -321,13 +325,13 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E6C2BD3610E6591D00320C16</string>
+										<string>E6C2BD4410E65B0600320C16</string>
 										<key>history</key>
 										<array>
 											<string>E6C2B92110E1FABC00320C16</string>
 											<string>E6C2BA5A10E39FCF00320C16</string>
 											<string>E6C2BBFF10E4CFB500320C16</string>
-											<string>E6C2BD2610E6578F00320C16</string>
+											<string>E6C2BD4310E65B0600320C16</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -342,6 +346,8 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {909, 405}}</string>
+								<key>RubberWindowFrame</key>
+								<string>290 160 1116 718 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -419,6 +425,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {909, 240}}</string>
+										<key>RubberWindowFrame</key>
+										<string>290 160 1116 718 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -491,8 +499,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -504,8 +510,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1116, 160}}</string>
-						<key>RubberWindowFrame</key>
-						<string>290 160 1116 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -580,11 +584,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{545, 0}, {571, 175}}</string>
-							<key>RubberWindowFrame</key>
-							<string>290 160 1116 718 0 0 1440 878 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>290 160 1116 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -648,7 +648,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E6C2BD3710E6591D00320C16</string>
 		<string>E6C2B8F310E0DFC700320C16</string>
 		<string>E6C2B8F410E0DFC700320C16</string>
 		<string>/Users/aciniglio/_Dev/cocoa/NL_interface/NL_interface.xcodeproj</string>
