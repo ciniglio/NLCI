@@ -209,14 +209,14 @@ andWithPossibleActions:(NSMutableArray *)pActions{
                         doRange.length = prepositionLocation - doRange.location;
                         NSLog(@"sowi: doranglen: %d", doRange.length);
 			NSString *possibleDO = [self cleanupWhitespaceIn:[raw substringWithRange:doRange]];
-                        directObject = [self nounMatch:possibleDO];
+                        directObject = [self findDONounsIn:possibleDO];
                         directObjectLocation = doRange.location + 1;
                         
                         NSRange ioRange;
                         ioRange.location = prepositionLocation + [preposition length];
                         ioRange.length = [raw length] - ioRange.location;
 			NSString *possibleIO = [self cleanupWhitespaceIn:[raw substringWithRange:ioRange]];
-                        indirectObject = [self nounMatch:possibleIO];
+                        indirectObject = [self findIONounsIn:possibleIO];
                         indirectObjectLocation = ioRange.location + 1;
                 }
         
@@ -229,7 +229,7 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 	  NSString *cleanActionRemainder = [self cleanupWhitespaceIn:actionRemainder];
 
 	  NSString *possibleDO = cleanActionRemainder;
-          directObject = [self findNounsIn:possibleDO];
+          directObject = [self findDONounsIn:possibleDO];
           directObjectLocation = actionLocation 
                                + [[[action componentsSeparatedByString:@" "] objectAtIndex:0] length] 
                                + 1;
@@ -237,7 +237,39 @@ andWithPossibleActions:(NSMutableArray *)pActions{
 
 }
 
-- (NSString *)findNounsIn:(NSString *)n{
+- (NSString *)findIONounsIn:(NSString *)n{
+  NSLog(@"findNounsIn %@", n);
+  NSArray *parts = [n componentsSeparatedByString:@","];
+  NSInteger numParts = [parts count];
+  NSInteger i;
+	NSString *possibleIO;
+  for (i=0; i < numParts; i++){
+    NSString *toCheck = [self cleanupWhitespaceIn:[parts objectAtIndex:i]];
+    if (i == numParts - 1 ){
+      NSLog(@"Last part: %@", toCheck);
+      NSArray *andParts = [toCheck componentsSeparatedByString:@"and"];
+      NSRange andRemainder;
+      //NSRange andLocation = [toCheck rangeOfString:@" and "
+      andRemainder.location = (numParts == 1 ? 0 : 1);
+      andRemainder.length = (numParts == 1 ? [andParts count]:[andParts count] - 1);
+      NSLog(@"number of and:: %d", [andParts count]);
+      toCheck = [[andParts subarrayWithRange:andRemainder] componentsJoinedByString:@"and"];
+      toCheck = [self cleanupWhitespaceIn:toCheck];
+    }
+    possibleIO = toCheck;
+    NSLog(@"possibleDO: %@", possibleIO);
+    if ([[self nounMatch:possibleIO] length] > 0){
+      NSLog(@"Matched: %@", possibleIO);
+      [indirectObjects addObject:[self nounMatch:possibleIO]];
+      continue;
+    }
+    return @"";
+  }
+  return possibleIO;
+}
+
+
+- (NSString *)findDONounsIn:(NSString *)n{
   NSLog(@"findNounsIn %@", n);
   NSArray *parts = [n componentsSeparatedByString:@","];
   NSInteger numParts = [parts count];
@@ -249,8 +281,10 @@ andWithPossibleActions:(NSMutableArray *)pActions{
       NSLog(@"Last part: %@", toCheck);
       NSArray *andParts = [toCheck componentsSeparatedByString:@"and"];
       NSRange andRemainder;
-      andRemainder.location = 1;
-      andRemainder.length = [andParts count] - 1;
+      andRemainder.location = (numParts == 1 ? 0 : 1);
+      andRemainder.length = (numParts == 1 ? [andParts count]:[andParts count] - 1);
+      //andRemainder.location = 1;
+      //andRemainder.length = [andParts count] - 1;
       NSLog(@"number of and:: %d", [andParts count]);
       toCheck = [[andParts subarrayWithRange:andRemainder] componentsJoinedByString:@"and"];
       toCheck = [self cleanupWhitespaceIn:toCheck];

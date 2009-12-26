@@ -520,6 +520,18 @@
 			E6C2BCFC10E653CB00320C16 /* PBXTextBookmark */ = E6C2BCFC10E653CB00320C16 /* PBXTextBookmark */;
 			E6C2BD0110E6542000320C16 /* PBXTextBookmark */ = E6C2BD0110E6542000320C16 /* PBXTextBookmark */;
 			E6C2BD0610E6545600320C16 /* PBXTextBookmark */ = E6C2BD0610E6545600320C16 /* PBXTextBookmark */;
+			E6C2BD0B10E6556F00320C16 /* PBXTextBookmark */ = E6C2BD0B10E6556F00320C16 /* PBXTextBookmark */;
+			E6C2BD1410E6558900320C16 /* XCBuildMessageTextBookmark */ = E6C2BD1410E6558900320C16 /* XCBuildMessageTextBookmark */;
+			E6C2BD1510E6558900320C16 /* PBXTextBookmark */ = E6C2BD1510E6558900320C16 /* PBXTextBookmark */;
+			E6C2BD1610E6559000320C16 /* PBXTextBookmark */ = E6C2BD1610E6559000320C16 /* PBXTextBookmark */;
+			E6C2BD1A10E656F800320C16 /* PBXTextBookmark */ = E6C2BD1A10E656F800320C16 /* PBXTextBookmark */;
+			E6C2BD1D10E6571E00320C16 /* PBXTextBookmark */ = E6C2BD1D10E6571E00320C16 /* PBXTextBookmark */;
+			E6C2BD2110E6577600320C16 /* PBXTextBookmark */ = E6C2BD2110E6577600320C16 /* PBXTextBookmark */;
+			E6C2BD2610E6578F00320C16 /* XCBuildMessageTextBookmark */ = E6C2BD2610E6578F00320C16 /* XCBuildMessageTextBookmark */;
+			E6C2BD2710E6578F00320C16 /* PBXTextBookmark */ = E6C2BD2710E6578F00320C16 /* PBXTextBookmark */;
+			E6C2BD2810E6579500320C16 /* PBXTextBookmark */ = E6C2BD2810E6579500320C16 /* PBXTextBookmark */;
+			E6C2BD2C10E6580500320C16 /* PBXTextBookmark */ = E6C2BD2C10E6580500320C16 /* PBXTextBookmark */;
+			E6C2BD3110E6585500320C16 /* PBXTextBookmark */ = E6C2BD3110E6585500320C16 /* PBXTextBookmark */;
 			E6E26C7110BB7DE9007332A8 = E6E26C7110BB7DE9007332A8 /* PBXTextBookmark */;
 			E6E3A82510AA877600C83986 = E6E3A82510AA877600C83986 /* PBXTextBookmark */;
 		};
@@ -2441,7 +2453,7 @@
 		ignoreCount = 0;
 		lineNumber = 63;
 		location = NL_interface;
-		modificationTime = 283530321.185745;
+		modificationTime = 283531342.907363;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -2459,7 +2471,7 @@
 		ignoreCount = 0;
 		lineNumber = 62;
 		location = NL_interface;
-		modificationTime = 283530321.187646;
+		modificationTime = 283531342.913076;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2778,7 +2790,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 472";
 		rLen = 0;
-		rLoc = 14366;
+		rLoc = 14374;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 8685;
@@ -2788,7 +2800,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 472";
 		rLen = 0;
-		rLoc = 14366;
+		rLoc = 14374;
 		rType = 0;
 		vrLen = 862;
 		vrLoc = 8549;
@@ -2798,7 +2810,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14423;
+		rLoc = 14431;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 8521;
@@ -2808,7 +2820,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14426;
+		rLoc = 14434;
 		rType = 0;
 		vrLen = 731;
 		vrLoc = 8467;
@@ -2818,7 +2830,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14426;
+		rLoc = 14434;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 8467;
@@ -2828,7 +2840,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14426;
+		rLoc = 14434;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 8467;
@@ -2838,7 +2850,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14453;
+		rLoc = 14461;
 		rType = 0;
 		vrLen = 782;
 		vrLoc = 8362;
@@ -2848,7 +2860,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14453;
+		rLoc = 14461;
 		rType = 0;
 		vrLen = 821;
 		vrLoc = 8362;
@@ -2858,7 +2870,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14462;
+		rLoc = 14470;
 		rType = 0;
 		vrLen = 820;
 		vrLoc = 8216;
@@ -2868,7 +2880,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 475";
 		rLen = 0;
-		rLoc = 14462;
+		rLoc = 14470;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 8276;
@@ -2878,7 +2890,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 477";
 		rLen = 0;
-		rLoc = 14494;
+		rLoc = 14502;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 8248;
@@ -2888,7 +2900,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 477";
 		rLen = 0;
-		rLoc = 14494;
+		rLoc = 14502;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 8248;
@@ -2898,7 +2910,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 479";
 		rLen = 0;
-		rLoc = 14538;
+		rLoc = 14546;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 8191;
@@ -2908,7 +2920,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 479";
 		rLen = 0;
-		rLoc = 14538;
+		rLoc = 14546;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 8191;
@@ -2918,7 +2930,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 480";
 		rLen = 0;
-		rLoc = 14569;
+		rLoc = 14577;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 8222;
@@ -2928,7 +2940,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 480";
 		rLen = 0;
-		rLoc = 14569;
+		rLoc = 14577;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 8222;
@@ -2938,7 +2950,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 481";
 		rLen = 0;
-		rLoc = 14593;
+		rLoc = 14601;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 8246;
@@ -2948,7 +2960,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 481";
 		rLen = 0;
-		rLoc = 14593;
+		rLoc = 14601;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 8246;
@@ -2958,7 +2970,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14597;
+		rLoc = 14605;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 8250;
@@ -2968,7 +2980,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14597;
+		rLoc = 14605;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 8250;
@@ -2978,7 +2990,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 8256;
@@ -2988,7 +3000,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 8256;
@@ -2998,7 +3010,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 8256;
@@ -3008,7 +3020,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 8256;
@@ -3018,7 +3030,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 8289;
@@ -3028,7 +3040,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 8289;
@@ -3038,7 +3050,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14612;
+		rLoc = 14620;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 8298;
@@ -3048,7 +3060,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14612;
+		rLoc = 14620;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 8298;
@@ -3058,7 +3070,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14612;
+		rLoc = 14620;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 8298;
@@ -3068,7 +3080,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14612;
+		rLoc = 14620;
 		rType = 0;
 		vrLen = 907;
 		vrLoc = 8298;
@@ -3078,7 +3090,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 838;
 		vrLoc = 8279;
@@ -3088,7 +3100,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 8357;
@@ -3098,7 +3110,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 8357;
@@ -3108,7 +3120,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 8357;
@@ -3118,7 +3130,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 8357;
@@ -3128,7 +3140,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 8357;
@@ -3148,7 +3160,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 482";
 		rLen = 0;
-		rLoc = 14603;
+		rLoc = 14611;
 		rType = 0;
 		vrLen = 884;
 		vrLoc = 9687;
@@ -3158,7 +3170,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 480";
 		rLen = 0;
-		rLoc = 14556;
+		rLoc = 14564;
 		rType = 0;
 		vrLen = 826;
 		vrLoc = 9748;
@@ -3168,7 +3180,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 480";
 		rLen = 0;
-		rLoc = 14556;
+		rLoc = 14564;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 9682;
@@ -3327,7 +3339,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 480";
 		rLen = 0;
-		rLoc = 14556;
+		rLoc = 14564;
 		rType = 0;
 		vrLen = 826;
 		vrLoc = 9748;
@@ -3545,7 +3557,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 490";
 		rLen = 0;
-		rLoc = 14987;
+		rLoc = 14995;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 4646;
@@ -3565,7 +3577,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 493";
 		rLen = 0;
-		rLoc = 15117;
+		rLoc = 15125;
 		rType = 0;
 		vrLen = 1156;
 		vrLoc = 4207;
@@ -3594,7 +3606,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 493";
 		rLen = 0;
-		rLoc = 17096;
+		rLoc = 17104;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 3722;
@@ -3604,7 +3616,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 493";
 		rLen = 0;
-		rLoc = 17096;
+		rLoc = 17104;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 3678;
@@ -3614,7 +3626,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 493";
 		rLen = 0;
-		rLoc = 17096;
+		rLoc = 17104;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 3722;
@@ -3624,7 +3636,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 498";
 		rLen = 0;
-		rLoc = 17250;
+		rLoc = 17258;
 		rType = 0;
 		vrLen = 970;
 		vrLoc = 3314;
@@ -3634,7 +3646,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 499";
 		rLen = 0;
-		rLoc = 17274;
+		rLoc = 17282;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 2250;
@@ -3644,7 +3656,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 499";
 		rLen = 0;
-		rLoc = 17274;
+		rLoc = 17282;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 2579;
@@ -3654,7 +3666,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 500";
 		rLen = 0;
-		rLoc = 17325;
+		rLoc = 17333;
 		rType = 0;
 		vrLen = 1201;
 		vrLoc = 2244;
@@ -3664,7 +3676,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 502";
 		rLen = 0;
-		rLoc = 17325;
+		rLoc = 17333;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 2112;
@@ -3674,7 +3686,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 502";
 		rLen = 0;
-		rLoc = 17325;
+		rLoc = 17333;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 2112;
@@ -3684,7 +3696,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 507";
 		rLen = 0;
-		rLoc = 17489;
+		rLoc = 17497;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 1680;
@@ -3694,7 +3706,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 502";
 		rLen = 0;
-		rLoc = 17325;
+		rLoc = 17333;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 1336;
@@ -3704,7 +3716,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 508";
 		rLen = 0;
-		rLoc = 17531;
+		rLoc = 17539;
 		rType = 0;
 		vrLen = 1045;
 		vrLoc = 1598;
@@ -3823,7 +3835,7 @@
 		ignoreCount = 0;
 		lineNumber = 295;
 		location = NL_interface;
-		modificationTime = 283530321.189388;
+		modificationTime = 283531342.913588;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3848,7 +3860,7 @@
 		ignoreCount = 0;
 		lineNumber = 303;
 		location = NL_interface;
-		modificationTime = 283530321.190252;
+		modificationTime = 283531342.914173;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3884,7 +3896,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 315";
 		rLen = 0;
-		rLoc = 12455;
+		rLoc = 12463;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 11226;
@@ -3894,7 +3906,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 315";
 		rLen = 0;
-		rLoc = 12455;
+		rLoc = 12463;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 11226;
@@ -3914,7 +3926,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 294";
 		rLen = 62;
-		rLoc = 11560;
+		rLoc = 11564;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 11169;
@@ -3924,7 +3936,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 294";
 		rLen = 62;
-		rLoc = 11560;
+		rLoc = 11564;
 		rType = 0;
 		vrLen = 879;
 		vrLoc = 11078;
@@ -3934,7 +3946,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 299";
 		rLen = 1;
-		rLoc = 11867;
+		rLoc = 11875;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 11226;
@@ -3944,7 +3956,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 302";
 		rLen = 95;
-		rLoc = 11909;
+		rLoc = 11917;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 11169;
@@ -3954,7 +3966,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 302";
 		rLen = 95;
-		rLoc = 11909;
+		rLoc = 11917;
 		rType = 0;
 		vrLen = 879;
 		vrLoc = 11078;
@@ -3964,7 +3976,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 302";
 		rLen = 95;
-		rLoc = 11909;
+		rLoc = 11917;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 11169;
@@ -3984,7 +3996,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 302";
 		rLen = 95;
-		rLoc = 11909;
+		rLoc = 11917;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 12592;
@@ -3994,7 +4006,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 330";
 		rLen = 0;
-		rLoc = 12860;
+		rLoc = 12868;
 		rType = 0;
 		vrLen = 826;
 		vrLoc = 12592;
@@ -4094,7 +4106,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 330";
 		rLen = 0;
-		rLoc = 12860;
+		rLoc = 12868;
 		rType = 0;
 		vrLen = 826;
 		vrLoc = 12577;
@@ -4104,7 +4116,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 523";
 		rLen = 0;
-		rLoc = 18398;
+		rLoc = 18406;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 10584;
@@ -4133,7 +4145,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 348";
 		rLen = 0;
-		rLoc = 13570;
+		rLoc = 13578;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 13033;
@@ -4143,7 +4155,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 348";
 		rLen = 0;
-		rLoc = 13570;
+		rLoc = 13578;
 		rType = 0;
 		vrLen = 1241;
 		vrLoc = 13004;
@@ -4153,7 +4165,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 524";
 		rLen = 0;
-		rLoc = 18454;
+		rLoc = 18462;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 13168;
@@ -4163,7 +4175,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 526";
 		rLen = 0;
-		rLoc = 18561;
+		rLoc = 18569;
 		rType = 0;
 		vrLen = 1241;
 		vrLoc = 13253;
@@ -4173,7 +4185,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 532";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 18751;
 		rType = 0;
 		vrLen = 1335;
 		vrLoc = 13253;
@@ -4183,7 +4195,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18529;
+		rLoc = 18537;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 13357;
@@ -4193,7 +4205,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18540;
+		rLoc = 18548;
 		rType = 0;
 		vrLen = 1061;
 		vrLoc = 13413;
@@ -4203,7 +4215,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18540;
+		rLoc = 18548;
 		rType = 0;
 		vrLen = 1061;
 		vrLoc = 13411;
@@ -4213,7 +4225,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18540;
+		rLoc = 18548;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 13475;
@@ -4223,7 +4235,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18579;
+		rLoc = 18587;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 13474;
@@ -4233,7 +4245,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18579;
+		rLoc = 18587;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 13474;
@@ -4243,7 +4255,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18579;
+		rLoc = 18587;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 13474;
@@ -4253,7 +4265,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 530";
 		rLen = 0;
-		rLoc = 18613;
+		rLoc = 18621;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 13463;
@@ -4263,7 +4275,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 531";
 		rLen = 0;
-		rLoc = 18658;
+		rLoc = 18666;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 13580;
@@ -4273,7 +4285,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 532";
 		rLen = 0;
-		rLoc = 18564;
+		rLoc = 18572;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 13623;
@@ -4283,7 +4295,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 532";
 		rLen = 0;
-		rLoc = 18604;
+		rLoc = 18612;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 13663;
@@ -4293,7 +4305,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 532";
 		rLen = 0;
-		rLoc = 18594;
+		rLoc = 18602;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 13653;
@@ -4303,7 +4315,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 533";
 		rLen = 0;
-		rLoc = 18593;
+		rLoc = 18601;
 		rType = 0;
 		vrLen = 885;
 		vrLoc = 13713;
@@ -4313,7 +4325,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 534";
 		rLen = 0;
-		rLoc = 18628;
+		rLoc = 18636;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 13687;
@@ -4323,7 +4335,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 535";
 		rLen = 0;
-		rLoc = 18587;
+		rLoc = 18595;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 13646;
@@ -4333,7 +4345,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 535";
 		rLen = 0;
-		rLoc = 18597;
+		rLoc = 18605;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 13656;
@@ -4343,7 +4355,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 535";
 		rLen = 0;
-		rLoc = 18593;
+		rLoc = 18601;
 		rType = 0;
 		vrLen = 908;
 		vrLoc = 13713;
@@ -4363,7 +4375,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 528";
 		rLen = 0;
-		rLoc = 18540;
+		rLoc = 18548;
 		rType = 0;
 		vrLen = 703;
 		vrLoc = 12166;
@@ -4373,7 +4385,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 535";
 		rLen = 0;
-		rLoc = 18552;
+		rLoc = 18560;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 7500;
@@ -4392,7 +4404,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 284";
 		rLen = 0;
-		rLoc = 11311;
+		rLoc = 11315;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 10794;
@@ -4402,7 +4414,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 284";
 		rLen = 0;
-		rLoc = 11311;
+		rLoc = 11315;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 10794;
@@ -4412,7 +4424,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 535";
 		rLen = 0;
-		rLoc = 18555;
+		rLoc = 18563;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 10920;
@@ -4422,7 +4434,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 539";
 		rLen = 0;
-		rLoc = 18630;
+		rLoc = 18638;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 10885;
@@ -4432,7 +4444,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 539";
 		rLen = 0;
-		rLoc = 18631;
+		rLoc = 18639;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 10885;
@@ -4442,7 +4454,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 540";
 		rLen = 0;
-		rLoc = 18666;
+		rLoc = 18674;
 		rType = 0;
 		vrLen = 975;
 		vrLoc = 10655;
@@ -4452,7 +4464,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 538";
 		rLen = 0;
-		rLoc = 18634;
+		rLoc = 18642;
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 10770;
@@ -4462,7 +4474,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 538";
 		rLen = 0;
-		rLoc = 18636;
+		rLoc = 18644;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 10513;
@@ -4472,7 +4484,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 538";
 		rLen = 0;
-		rLoc = 18640;
+		rLoc = 18648;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 10655;
@@ -4482,7 +4494,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 541";
 		rLen = 0;
-		rLoc = 18730;
+		rLoc = 18738;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 10669;
@@ -4492,7 +4504,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 544";
 		rLen = 0;
-		rLoc = 18895;
+		rLoc = 18903;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 10910;
@@ -4502,7 +4514,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 544";
 		rLen = 0;
-		rLoc = 18794;
+		rLoc = 18802;
 		rType = 0;
 		vrLen = 770;
 		vrLoc = 11183;
@@ -4512,7 +4524,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 544";
 		rLen = 0;
-		rLoc = 18820;
+		rLoc = 18828;
 		rType = 0;
 		vrLen = 830;
 		vrLoc = 10974;
@@ -4522,7 +4534,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 545";
 		rLen = 0;
-		rLoc = 18886;
+		rLoc = 18894;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 10825;
@@ -4532,7 +4544,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 546";
 		rLen = 0;
-		rLoc = 18926;
+		rLoc = 18934;
 		rType = 0;
 		vrLen = 1118;
 		vrLoc = 10765;
@@ -4542,7 +4554,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 546";
 		rLen = 0;
-		rLoc = 19003;
+		rLoc = 19011;
 		rType = 0;
 		vrLen = 1118;
 		vrLoc = 10842;
@@ -4552,7 +4564,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 547";
 		rLen = 0;
-		rLoc = 19040;
+		rLoc = 19048;
 		rType = 0;
 		vrLen = 1088;
 		vrLoc = 10913;
@@ -4562,7 +4574,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19144;
+		rLoc = 19152;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11083;
@@ -4572,7 +4584,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19142;
+		rLoc = 19150;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11081;
@@ -4582,7 +4594,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19142;
+		rLoc = 19150;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11081;
@@ -4592,7 +4604,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19142;
+		rLoc = 19150;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11081;
@@ -4602,7 +4614,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19142;
+		rLoc = 19150;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11081;
@@ -4612,7 +4624,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19142;
+		rLoc = 19150;
 		rType = 0;
 		vrLen = 1041;
 		vrLoc = 11081;
@@ -4622,7 +4634,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19142;
+		rLoc = 19150;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11081;
@@ -4632,7 +4644,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 548";
 		rLen = 0;
-		rLoc = 19142;
+		rLoc = 19150;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11081;
@@ -4642,7 +4654,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 554";
 		rLen = 0;
-		rLoc = 19386;
+		rLoc = 19394;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 11690;
@@ -4652,7 +4664,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 580";
 		rLen = 0;
-		rLoc = 20285;
+		rLoc = 20293;
 		rType = 0;
 		vrLen = 1055;
 		vrLoc = 4400;
@@ -4691,7 +4703,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 582";
 		rLen = 0;
-		rLoc = 20325;
+		rLoc = 20333;
 		rType = 0;
 		vrLen = 1006;
 		vrLoc = 9012;
@@ -4701,7 +4713,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 583";
 		rLen = 0;
-		rLoc = 20379;
+		rLoc = 20387;
 		rType = 0;
 		vrLen = 1469;
 		vrLoc = 8536;
@@ -4711,7 +4723,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 583";
 		rLen = 0;
-		rLoc = 20383;
+		rLoc = 20391;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 8292;
@@ -4721,7 +4733,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 584";
 		rLen = 0;
-		rLoc = 20432;
+		rLoc = 20440;
 		rType = 0;
 		vrLen = 1547;
 		vrLoc = 7895;
@@ -4731,7 +4743,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 584";
 		rLen = 0;
-		rLoc = 20432;
+		rLoc = 20440;
 		rType = 0;
 		vrLen = 1694;
 		vrLoc = 7895;
@@ -4741,7 +4753,7 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 584";
 		rLen = 0;
-		rLoc = 20432;
+		rLoc = 20440;
 		rType = 0;
 		vrLen = 1694;
 		vrLoc = 7895;
@@ -4751,10 +4763,128 @@
 		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
 		name = "NLParser.m: 584";
 		rLen = 0;
-		rLoc = 20432;
+		rLoc = 20440;
 		rType = 0;
 		vrLen = 1694;
 		vrLoc = 7895;
+	};
+	E6C2BD0B10E6556F00320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 615";
+		rLen = 0;
+		rLoc = 21513;
+		rType = 0;
+		vrLen = 1545;
+		vrLoc = 7932;
+	};
+	E6C2BD1410E6558900320C16 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'possibleDO' undeclared (first use in this function)";
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 258;
+		rType = 1;
+	};
+	E6C2BD1510E6558900320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 262";
+		rLen = 0;
+		rLoc = 11022;
+		rType = 0;
+		vrLen = 930;
+		vrLoc = 10344;
+	};
+	E6C2BD1610E6559000320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 262";
+		rLen = 0;
+		rLoc = 11022;
+		rType = 0;
+		vrLen = 1036;
+		vrLoc = 10029;
+	};
+	E6C2BD1A10E656F800320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 616";
+		rLen = 0;
+		rLoc = 21586;
+		rType = 0;
+		vrLen = 1128;
+		vrLoc = 9769;
+	};
+	E6C2BD1D10E6571E00320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 616";
+		rLen = 0;
+		rLoc = 21586;
+		rType = 0;
+		vrLen = 1170;
+		vrLoc = 9769;
+	};
+	E6C2BD2110E6577600320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 618";
+		rLen = 0;
+		rLoc = 21805;
+		rType = 0;
+		vrLen = 1104;
+		vrLoc = 8922;
+	};
+	E6C2BD2610E6578F00320C16 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ')' before 'count'";
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 283;
+		rType = 1;
+	};
+	E6C2BD2710E6578F00320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 285";
+		rLen = 0;
+		rLoc = 11821;
+		rType = 0;
+		vrLen = 1192;
+		vrLoc = 11228;
+	};
+	E6C2BD2810E6579500320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 285";
+		rLen = 0;
+		rLoc = 11821;
+		rType = 0;
+		vrLen = 1110;
+		vrLoc = 11224;
+	};
+	E6C2BD2C10E6580500320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 618";
+		rLen = 0;
+		rLoc = 21773;
+		rType = 0;
+		vrLen = 1011;
+		vrLoc = 11060;
+	};
+	E6C2BD3110E6585500320C16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E6E26C3010BB6E5D007332A8 /* NLParser.m */;
+		name = "NLParser.m: 618";
+		rLen = 0;
+		rLoc = 21769;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 10988;
 	};
 	E6E26C2F10BB6E5D007332A8 /* NLParser.h */ = {
 		uiCtxt = {
@@ -4765,9 +4895,9 @@
 	};
 	E6E26C3010BB6E5D007332A8 /* NLParser.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 7267}}";
-			sepNavSelRange = "{20432, 0}";
-			sepNavVisRange = "{7895, 1694}";
+			sepNavIntBoundsRect = "{{0, 0}, {848, 8021}}";
+			sepNavSelRange = "{21769, 0}";
+			sepNavVisRange = "{10988, 986}";
 			sepNavWindowFrame = "{{15, 204}, {947, 669}}";
 		};
 	};
